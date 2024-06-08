@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Sleep Cycle Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sleep</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html"
+              >Home</a
+            >
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Calculate Sleep</a>
+            <a class="nav-link" href="/About Us/index.html">About us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End  -->
+
+    <header>
+      <h1>Sleep Cycle Calculator by Suman</h1>
+    </header>
+
+    <section class="calculator">
+      <div class="input-section">
+        <h2>I want to wake up at...</h2>
+        <div class="time-select">
+          <select id="wakeUpHours">
+            <option value="">Select Hours</option>
+            <!-- Add options for hours 1-12 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select id="wakeUpMinutes">
+            <option value="">Select Minutes</option>
+            <!-- Add options for minutes 00-55 in increments of 5 -->
+            <option value="0">00</option>
+            <option value="5">05</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55">55</option>
+          </select>
+          <select id="wakeUpPeriod">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <button id="calculateWakeUpButton">CALCULATE</button>
+        <button id="sleepNowButton">SLEEP NOW</button>
+        <button id="checkAgainButton">CHECK AGAIN</button>
+      </div>
+
+      <div class="input-section">
+        <h2>I plan to fall asleep at...</h2>
+        <div class="time-select">
+          <select id="bedtimeHours">
+            <option value="">Select Hours</option>
+            <!-- Add options for hours 1-12 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select id="bedtimeMinutes">
+            <option value="">Select Minutes</option>
+            <!-- Add options for minutes 00-55 in increments of 5 -->
+            <option value="0">00</option>
+            <option value="5">05</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="35">35</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="55">55</option>
+          </select>
+          <select id="bedtimePeriod">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <button id="calculateBedtimeButton">CALCULATE</button>
+        <button id="sleepNowFallButton">SLEEP NOW</button>
+        <button id="checkAgainFallButton">CHECK AGAIN</button>
+      </div>
+
+      <div id="results"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Suman. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
