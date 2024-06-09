@@ -30,7 +30,6 @@ document
     calculateSleepTimes(bedtime, "sleep");
   });
 
-// sleep for button for I want to wake up at...
 document
   .getElementById("sleepNowButton")
   .addEventListener("click", function () {
@@ -47,7 +46,6 @@ document
     calculateSleepTimes(currentTime, "sleep");
   });
 
-// sleep for button for I plan to fall asleep at...
 document
   .getElementById("sleepNowFallButton")
   .addEventListener("click", function () {
@@ -64,7 +62,6 @@ document
     calculateSleepTimes(currentTime, "sleep");
   });
 
-//check again for I want to wake up at...
 document
   .getElementById("checkAgainButton")
   .addEventListener("click", function () {
@@ -74,7 +71,6 @@ document
     document.getElementById("wakeUpPeriod").value = "AM";
   });
 
-// check again for I plan to fall asleep at...
 document
   .getElementById("checkAgainFallButton")
   .addEventListener("click", function () {
@@ -83,6 +79,7 @@ document
     document.getElementById("bedtimeMinutes").value = "";
     document.getElementById("bedtimePeriod").value = "AM";
   });
+
 function calculateSleepTimes(time, type) {
   var timeParts = time.split(/[: ]/);
   var hours = parseInt(timeParts[0]);
@@ -98,44 +95,48 @@ function calculateSleepTimes(time, type) {
   var resultsDiv = document.getElementById("results");
   resultsDiv.innerHTML = "";
 
-  var sleepCycles = 6; // Recommended cycles (6 cycles * 90 minutes)
   var results = [];
+  var sleepCycles = 6; // Number of sleep cycles to display
+
   var wakeUpText =
     type === "wake"
       ? `If you want to wake up at ${time}, you should go to bed at:`
       : `You should try to wake up at one of the following times:`;
   results.push(wakeUpText);
 
-  for (var i = 0; i < sleepCycles; i++) {
+  for (var i = 1; i <= sleepCycles; i++) {
+    var adjustedTime = new Date();
+    adjustedTime.setHours(hours);
+    adjustedTime.setMinutes(minutes);
+
     if (type === "wake") {
-      minutes -= 90;
-      while (minutes < 0) {
-        minutes += 60;
-        hours -= 1;
-      }
+      adjustedTime.setMinutes(adjustedTime.getMinutes() - i * 90);
     } else {
-      minutes += 90;
-      while (minutes >= 60) {
-        minutes -= 60;
-        hours += 1;
-      }
+      adjustedTime.setMinutes(adjustedTime.getMinutes() + i * 90);
     }
 
-    if (hours >= 24) {
-      hours -= 24;
-    } else if (hours < 0) {
-      hours += 24;
-    }
+    var adjustedHours = adjustedTime.getHours();
+    var adjustedMinutes = adjustedTime.getMinutes();
+    var adjustedPeriod = adjustedHours >= 12 ? "PM" : "AM";
 
-    var formattedTime = formatTime(hours, minutes);
+    adjustedHours = adjustedHours % 12;
+    adjustedHours = adjustedHours ? adjustedHours : 12; // hour '0' should be '12'
+    adjustedMinutes =
+      adjustedMinutes < 10 ? "0" + adjustedMinutes : adjustedMinutes;
+
+    var formattedTime = `${adjustedHours}:${adjustedMinutes} ${adjustedPeriod}`;
     var cycleText =
       type === "wake"
-        ? `Sleep Cycle ${i + 1}: ${formattedTime}`
-        : `${formattedTime} For ${i + 3} Cycles - ${
-            ((i + 3) * 90) / 60
-          } Hours of Sleep.`;
+        ? `Sleep Cycle ${i}: ${formattedTime}`
+        : `${formattedTime} For ${i} Cycles - ${(i * 1.5).toFixed(
+            1
+          )} Hours of Sleep.`;
     results.push(cycleText);
   }
+
+  results.push(
+    "<br>Please keep in mind that you should be waking up at these times. The average human takes fourteen minutes to wake up, so plan accordingly!"
+  );
 
   resultsDiv.innerHTML = results.join("<br>");
 }
