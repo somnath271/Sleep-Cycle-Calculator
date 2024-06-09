@@ -15,87 +15,136 @@
 
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-light navbar-expand-lg sticky-top"
-      style="background-color: #e3f2fd"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sleep Cycle</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="/Learn About Sleep/index.html"
-              >Learn About Sleep</a
-            >
-            <a class="nav-link" href="/Calculate Sleep/index.html"
-              >Calculate Sleep</a
-            >
-            <a class="nav-link" href="#">Contact us</a>
+    <div id="loader" class="loader"></div>
+    <div id="content" class="content hidden">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-light navbar-expand-lg sticky-top"
+        style="background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sleep Cycle</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="/Learn About Sleep/index.html"
+                >Learn About Sleep</a
+              >
+              <a class="nav-link" href="/Calculate Sleep/index.html"
+                >Calculate Sleep</a
+              >
+              <a class="nav-link" href="#">Contact us</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- Navbar End  -->
-    <main class="contact-page">
-      <section class="contact-info">
-        <h2>Get in touch with us</h2>
-        <div class="contact-details">
-          <div class="contact-item">
-            <img src="email-icon.png" alt="Email Icon" />
-            <p>sumanbhattarai200@gmail.com</p>
+      </nav>
+      <!-- Navbar End  -->
+      <main class="contact-page">
+        <section class="contact-info">
+          <h2>Get in touch with us</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/email-open.png"
+                alt="Email Icon"
+              />
+              <p>sumanbhattarai200@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+                alt="Phone Icon"
+              />
+              <p>+977-9840041001</p>
+            </div>
+            <div class="contact-item">
+              <img
+                src="https://img.icons8.com/ios-filled/50/000000/address.png"
+                alt="Location Icon"
+              />
+              <p>Tansen-7, Palpa, Nepal</p>
+            </div>
           </div>
-          <div class="contact-item">
-            <img src="phone-icon.png" alt="Phone Icon" />
-            <p>+977-9840041001</p>
-          </div>
-          <div class="contact-item">
-            <img src="location-icon.png" alt="Location Icon" />
-            <p>Tansen-7, Palpa, Nepal</p>
-          </div>
-        </div>
-      </section>
-      <section class="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required />
-          </div>
-          <div class="form-group">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email (privacy policy)</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required>
+        </section>
+        <section class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email (privacy policy)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="form-control"
+                required
+              >
 I'm interested in learning more about...</textarea
-            >
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Suman. All rights reserved.</p>
-    </footer>
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Suman. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl59v/6fa/I7FjqLAy8rK62zQEZIvxB2XkzF1HAePGj5yp0dYTZDy0Ky7U"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhG+cP0Kj01/3G6T4IChp3W5n6rts5e5i/JOmHU9sP6G7awg9Fd4PvvoC1+P"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
