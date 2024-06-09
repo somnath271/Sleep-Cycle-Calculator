@@ -135,7 +135,7 @@ function calculateSleepTimes(time, type) {
   }
 
   results.push(
-    "<br>Please keep in mind that you should be waking up at these times. The average human takes fourteen minutes to wake up, so plan accordingly!"
+    "<br>Remember to consider that you should be getting up at these designated times. Keep in mind that it takes the average person fourteen minutes to fully wake up, so adjust your plans accordingly!"
   );
 
   resultsDiv.innerHTML = results.join("<br>");
