@@ -23,7 +23,7 @@ The Sleep Cycle Calculator is a web application designed to help users determine
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/sleep-cycle-calculator.git
+   git clone https://github.com/somnath271/sleep-cycle-calculator.git
    
 2. Navigate to the project directory:
    ```bash
