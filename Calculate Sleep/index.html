@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sleep Cycle Calculator</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -13,14 +13,13 @@
       crossorigin="anonymous"
     />
 
-    <title>Sleep Cycle Calculator</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sleep Cycle</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="/index.html">Sleep Cycle</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,121 +32,154 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="../index.html"
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link active fw-semibold"
+              aria-current="page"
+              href="../index.html"
               >Home</a
             >
-            <a class="nav-link" href="/Learn About Sleep/index.html"
+            <a class="nav-link fw-semibold" href="/Learn About Sleep/index.html"
               >Learn About Sleep</a
             >
-            <a class="nav-link" href="#">Calculate Sleep</a>
-            <a class="nav-link" href="/Contact Us/index.html">Contact us</a>
+            <a class="nav-link fw-semibold" href="#">Calculate Sleep</a>
+            <a class="nav-link fw-semibold" href="/Contact Us/index.html"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
     </nav>
-    <!-- Navbar End  -->
+    <!-- Navbar End -->
 
-    <header>
-      <h1>Sleep Cycle Calculator by Somnath</h1>
+    <header class="py-5 bg-primary text-light text-center">
+      <h1 class="display-4 fw-bold">Sleep Cycle Calculator</h1>
+      <p class="lead">Optimize your sleep for a healthier lifestyle.</p>
     </header>
 
-    <section class="calculator">
-      <div class="input-section">
-        <h2>I want to wake up at...</h2>
-        <div class="time-select">
-          <select id="wakeUpHours">
-            <option value="">Select Hours</option>
-            <!-- Add options for hours 1-12 -->
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <select id="wakeUpMinutes">
-            <option value="">Select Minutes</option>
-            <!-- Add options for minutes 00-55 in increments of 5 -->
-            <option value="0">00</option>
-            <option value="5">05</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="30">30</option>
-            <option value="35">35</option>
-            <option value="40">40</option>
-            <option value="45">45</option>
-            <option value="50">50</option>
-            <option value="55">55</option>
-          </select>
-          <select id="wakeUpPeriod">
-            <option value="AM">AM</option>
-            <option value="PM">PM</option>
-          </select>
+    <main class="container py-4">
+      <!-- Calculator Section -->
+      <div class="calculator bg-light rounded shadow p-4">
+        <h2 class="text-center fw-bold text-secondary mb-4">
+          Calculate Your Sleep
+        </h2>
+        <div class="row">
+          <!-- Wake Up Time Section -->
+          <div class="col-md-6 mb-4">
+            <h3 class="text-secondary">I want to wake up at...</h3>
+            <div class="time-select d-flex justify-content-between mb-3">
+              <select id="wakeUpHours" class="form-select me-2">
+                <option value="">Hours</option>
+                <!-- Add options for hours 1-12 -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select id="wakeUpMinutes" class="form-select me-2">
+                <option value="">Minutes</option>
+                <!-- Add options for minutes -->
+                <option value="0">00</option>
+                <option value="5">05</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+              </select>
+              <select id="wakeUpPeriod" class="form-select">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <button id="calculateWakeUpButton" class="btn btn-primary">
+                Calculate
+              </button>
+              <button id="sleepNowButton" class="btn btn-success">
+                Sleep Now
+              </button>
+              <button id="checkAgainButton" class="btn btn-outline-secondary">
+                Check Again
+              </button>
+            </div>
+          </div>
+          <!-- Bedtime Section -->
+          <div class="col-md-6">
+            <h3 class="text-secondary">I plan to fall asleep at...</h3>
+            <div class="time-select d-flex justify-content-between mb-3">
+              <select id="bedtimeHours" class="form-select me-2">
+                <option value="">Hours</option>
+                <!-- Add options for hours -->
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select id="bedtimeMinutes" class="form-select me-2">
+                <option value="">Minutes</option>
+                <!-- Add options for minutes -->
+                <option value="0">00</option>
+                <option value="5">05</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="55">55</option>
+              </select>
+              <select id="bedtimePeriod" class="form-select">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <button id="calculateBedtimeButton" class="btn btn-primary">
+                Calculate
+              </button>
+              <button id="sleepNowFallButton" class="btn btn-success">
+                Sleep Now
+              </button>
+              <button
+                id="checkAgainFallButton"
+                class="btn btn-outline-secondary"
+              >
+                Check Again
+              </button>
+            </div>
+          </div>
         </div>
-        <button id="calculateWakeUpButton">CALCULATE</button>
-        <button id="sleepNowButton">SLEEP NOW</button>
-        <button id="checkAgainButton">CHECK AGAIN</button>
       </div>
+      <div id="results" class="mt-4 text-center text-dark"></div>
+    </main>
 
-      <div class="input-section">
-        <h2>I plan to fall asleep at...</h2>
-        <div class="time-select">
-          <select id="bedtimeHours">
-            <option value="">Select Hours</option>
-            <!-- Add options for hours 1-12 -->
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <select id="bedtimeMinutes">
-            <option value="">Select Minutes</option>
-            <!-- Add options for minutes 00-55 in increments of 5 -->
-            <option value="0">00</option>
-            <option value="5">05</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="25">25</option>
-            <option value="30">30</option>
-            <option value="35">35</option>
-            <option value="40">40</option>
-            <option value="45">45</option>
-            <option value="50">50</option>
-            <option value="55">55</option>
-          </select>
-          <select id="bedtimePeriod">
-            <option value="AM">AM</option>
-            <option value="PM">PM</option>
-          </select>
-        </div>
-        <button id="calculateBedtimeButton">CALCULATE</button>
-        <button id="sleepNowFallButton">SLEEP NOW</button>
-        <button id="checkAgainFallButton">CHECK AGAIN</button>
-      </div>
-
-      <div id="results"></div>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 Somnath. All rights reserved.</p>
+    <footer class="py-3 bg-dark text-light text-center">
+      <p>&copy; 2024 Somnath Bhattarai. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>

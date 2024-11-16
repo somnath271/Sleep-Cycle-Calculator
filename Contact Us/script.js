@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(fadeIn);
       }
     }, 50);
-  }, 2000);
+  }, 200);
 
   // Form submission
   const form = document.getElementById("contact-form");

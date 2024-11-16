@@ -1,79 +1,23 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #2b3e50;
-  color: #fff;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7fc;
 }
 
 header {
-  background-color: #2b3e50;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-  color: #fff;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
 }
 
 .calculator {
-  padding: 20px;
-  text-align: center;
-  background-color: #354a68;
-  border-radius: 10px;
-  margin: 20px;
+  background-color: #ffffff;
+  border: 2px solid #e3e6ea;
 }
 
-.calculator h2 {
-  color: #fff;
-}
-
-.input-section {
-  margin-bottom: 20px;
-}
-
-.time-select {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-select {
-  padding: 10px;
-  font-size: 16px;
-  margin: 0 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
+select,
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin: 10px 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #6c757d;
-  color: #fff;
-  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #5a6268;
-}
-
-#results {
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-footer {
-  background-color: #2b3e50;
-  text-align: center;
-  padding: 10px 0;
-}
-
-footer p {
-  margin: 0;
-  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
