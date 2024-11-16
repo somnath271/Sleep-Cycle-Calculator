@@ -5,7 +5,10 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
-
+.navbar-brand {
+  font-weight: bold;
+  color: #f9c74f !important;
+}
 .hidden {
   display: none;
 }

@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
-
-    <title>About Sleep</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>About Sleep</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
       <div class="container">
-        <a class="navbar-brand fw-bold fs-4" href="/index.html">Sleep Cycle</a>
+        <a class="navbar-brand" href="/index.html">Sleep Cycle</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,156 +32,102 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a
-              class="nav-link active fw-semibold"
-              aria-current="page"
-              href="../index.html"
-              >Home</a
-            >
-            <a class="nav-link fw-semibold" href="#">Learn About Sleep</a>
-            <a class="nav-link fw-semibold" href="/Calculate Sleep/index.html"
+            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link active" href="#">Learn About Sleep</a>
+            <a class="nav-link" href="/Calculate Sleep/index.html"
               >Calculate Sleep</a
             >
-            <a class="nav-link fw-semibold" href="/Contact Us/index.html"
-              >Contact Us</a
-            >
+            <a class="nav-link" href="/Contact Us/index.html">Contact Us</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>Unlock the Secrets of Sleep</h1>
+      <p>Explore the benefits of restful nights and refreshing mornings.</p>
+      <a href="#about-sleep" class="btn btn-animated">Discover More</a>
+    </div>
+
+    <!-- Content Sections -->
     <main>
-      <section id="about-sleep" class="section">
-        <h2>What is Sleep?</h2>
-        <p>
-          Sleep is a naturally recurring state of mind and body, characterized
-          by altered consciousness, relatively inhibited sensory activity,
-          reduced muscle activity, and inhibition of nearly all voluntary
-          muscles during rapid eye movement (REM) sleep. It is essential for the
-          body's recovery and proper functioning.
-        </p>
+      <section id="about-sleep" class="section bg-light text-center">
+        <div class="container">
+          <h2 class="mb-4">What is Sleep?</h2>
+          <p class="lead">
+            Sleep is essential for health, balancing physical and mental
+            well-being.
+          </p>
+        </div>
       </section>
 
       <section id="importance-of-sleep" class="section">
-        <h2>The Importance of Sleep</h2>
-        <p>
-          Sleep plays a crucial role in good health and well-being throughout
-          your life. It protects mental health, physical health, quality of
-          life, and safety. The way you feel while you're awake depends in part
-          on what happens while you're sleeping. During sleep, your body is
-          working to support healthy brain function and maintain your physical
-          health.
-        </p>
+        <div class="container">
+          <h2 class="text-center mb-4">Why Sleep Matters</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-brain fa-3x mb-3 text-primary"></i>
+                  <h5>Brain Health</h5>
+                  <p>Improves memory, creativity, and focus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-heart-pulse fa-3x mb-3 text-danger"></i>
+                  <h5>Physical Health</h5>
+                  <p>Strengthens the immune system and heart health.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-smile-beam fa-3x mb-3 text-success"></i>
+                  <h5>Mood Regulation</h5>
+                  <p>Reduces stress and enhances happiness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="sleep-cycles" class="section">
-        <h2>Understanding Sleep Cycles</h2>
-        <p>
-          Sleep occurs in a series of cycles of REM (rapid eye movement) and
-          non-REM sleep. Typically, you cycle through five stages of sleep:
-        </p>
-        <ul>
-          <li>
-            Stage 1: Light sleep, drifting in and out, and can be awakened
-            easily.
-          </li>
-          <li>
-            Stage 2: Eye movements stop, and brain waves become slower with
-            occasional bursts of rapid waves.
-          </li>
-          <li>
-            Stage 3: Deep sleep begins. Slow brain waves called delta waves are
-            interspersed with smaller, faster waves.
-          </li>
-          <li>
-            Stage 4: Very deep sleep. The brain produces delta waves
-            exclusively. Difficult to wake someone up during this stage.
-          </li>
-          <li>
-            Stage 5: REM sleep. Breathing becomes more rapid, irregular, and
-            shallow, eyes jerk rapidly, and limb muscles become temporarily
-            paralyzed.
-          </li>
-        </ul>
-      </section>
-
-      <section id="circadian-rhythms" class="section">
-        <h2>Circadian Rhythms</h2>
-        <p>
-          Circadian rhythms are 24-hour cycles that are part of the body’s
-          internal clock, running in the background to carry out essential
-          functions and processes. One of the most important and well-known
-          circadian rhythms is the sleep-wake cycle.
-        </p>
-      </section>
-
-      <section id="health-benefits" class="section">
-        <h2>Health Benefits of Good Sleep</h2>
-        <p>
-          Getting enough quality sleep at the right times helps you function
-          well throughout the day. People who are sleep deficient are less
-          productive at work and school. They take longer to finish tasks, have
-          a slower reaction time, and make more mistakes.
-        </p>
-        <p>Good sleep has many benefits, including:</p>
-        <ul>
-          <li>Improved memory and cognitive function</li>
-          <li>Better mood regulation</li>
-          <li>Enhanced physical performance</li>
-          <li>Stronger immune system</li>
-          <li>Lower risk of chronic diseases</li>
-        </ul>
-      </section>
-
-      <section id="sleep-disorders" class="section">
-        <h2>Common Sleep Disorders</h2>
-        <p>
-          Many people experience sleep disorders at some point in their lives.
-          Common sleep disorders include:
-        </p>
-        <ul>
-          <li>Insomnia: Difficulty falling asleep or staying asleep</li>
-          <li>Sleep Apnea: Breathing interruptions during sleep</li>
-          <li>
-            Restless Legs Syndrome: Uncomfortable sensations in the legs with an
-            urge to move them
-          </li>
-          <li>
-            Narcolepsy: Excessive daytime sleepiness and sudden sleep attacks
-          </li>
-        </ul>
-        <p>
-          If you experience any of these symptoms, it's important to seek
-          medical advice.
-        </p>
-      </section>
-
-      <section id="improving-sleep" class="section">
-        <h2>Tips for Improving Sleep</h2>
-        <ul>
-          <li>
-            Stick to a sleep schedule by going to bed and waking up at the same
-            time every day.
-          </li>
-          <li>
-            Practice a relaxing bedtime ritual to unwind and signal to your body
-            that it's time to sleep.
-          </li>
-          <li>
-            Ensure your sleep environment is comfortable: cool, dark, and quiet.
-          </li>
-          <li>Limit exposure to screens and blue light before bedtime.</li>
-          <li>Avoid caffeine and heavy meals close to bedtime.</li>
-          <li>
-            Stay physically active during the day to promote better sleep at
-            night.
-          </li>
-        </ul>
+      <section id="sleep-tips" class="section bg-light text-center">
+        <div class="container">
+          <h2 class="mb-4">How to Sleep Better</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <i class="fa-solid fa-clock me-2"></i> Stick to a consistent sleep
+              schedule.
+            </li>
+            <li class="list-group-item">
+              <i class="fa-solid fa-bed me-2"></i> Create a comfortable sleep
+              environment.
+            </li>
+            <li class="list-group-item">
+              <i class="fa-solid fa-lightbulb me-2"></i> Avoid screens before
+              bedtime.
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Somnath. All rights reserved.</p>
+      <p>
+        &copy; 2024 Somnath | Designed for Better Sleep.
+        <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+      </p>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
