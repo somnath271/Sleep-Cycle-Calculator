@@ -24,10 +24,12 @@ body {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
+
 .hero-section p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 .btn-calculate {
   background-color: #f9c74f;
   border: none;
@@ -38,11 +40,13 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
+
 .btn-calculate:hover {
   background-color: #f9844a;
   color: white;
   transform: scale(1.05);
 }
+
 footer {
   background-color: #343a40;
   color: white;

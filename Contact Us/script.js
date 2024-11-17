@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const content = document.getElementById("content");
 
   // Simulate loading time
+
   setTimeout(() => {
     loader.classList.add("hidden");
     content.classList.remove("hidden");
