@@ -70,15 +70,12 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 footer {
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #c6c6c9, #858189);
   color: white;
   padding: 20px 0;
   text-align: center;
 }
-footer a {
-  color: #ffc107;
-  text-decoration: none;
-}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

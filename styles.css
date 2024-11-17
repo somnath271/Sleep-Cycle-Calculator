@@ -48,8 +48,8 @@ body {
 }
 
 footer {
-  background-color: #343a40;
+  background: linear-gradient(to right, #3f3d42, #161617);
   color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 1rem 0;
 }

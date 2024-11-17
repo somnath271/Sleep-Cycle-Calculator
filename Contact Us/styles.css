@@ -9,38 +9,6 @@ body {
   font-weight: bold;
   color: #f9c74f !important;
 }
-.hidden {
-  display: none;
-}
-
-header {
-  background: linear-gradient(90deg, #4b79a1, #283e51);
-  color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-nav ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1.2em;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ffa500;
-}
 
 main.contact-page {
   max-width: 1200px;
@@ -105,14 +73,10 @@ button:hover {
 }
 
 footer {
-  background: #35424a;
-  color: #ffffff;
+  background: linear-gradient(to right, #c6c6c9, #858189);
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 10px 0;
-}
-
-footer p {
-  margin: 0;
 }
 
 /* Loader styles */
