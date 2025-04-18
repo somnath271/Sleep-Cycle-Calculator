@@ -58,15 +58,42 @@
       Sleep Cycle Calculator | Optimize Your Sleep for Better Health
     </title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Critical CSS -->
+    <style>
+      /* Add critical CSS here */
+      .navbar {
+        position: relative;
+      }
+      .hero-section {
+        padding: 2rem 0;
+      }
+      .content-section {
+        padding: 2rem 0;
+      }
+      /* Add other critical styles */
+    </style>
+
+    <!-- Deferred Bootstrap CSS -->
     <link
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      media="print"
+      onload="this.media='all'"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -291,8 +318,24 @@
       </div>
     </footer>
 
-    <!-- Bootstrap Script -->
+    <!-- Deferred Scripts -->
+    <script>
+      // Defer Google Analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0ZMZ39R16T");
+    </script>
     <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0ZMZ39R16T"
+    ></script>
+
+    <!-- Deferred Bootstrap Bundle -->
+    <script
+      defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
