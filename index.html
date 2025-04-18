@@ -26,7 +26,7 @@
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="Discover better sleep patterns with our Sleep Cycle Calculator. Optimize your health by calculating your perfect sleep schedule today."
+      content="Calculate your optimal sleep schedule based on sleep cycles. Wake up refreshed and energized with our sleep calculator."
     />
     <meta
       name="keywords"
@@ -53,46 +53,96 @@
     />
     <meta property="og:type" content="website" />
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sleep Cycle Calculator",
+        "url": "https://sleep-cycle-calculator-nine.vercel.app/",
+        "description": "Calculate your optimal sleep schedule based on sleep cycles. Wake up refreshed and energized with our sleep calculator.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://sleep-cycle-calculator-nine.vercel.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a sleep cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A sleep cycle is a period of sleep that typically lasts about 90 minutes and includes different stages of sleep, from light sleep to deep sleep and REM sleep. Completing full sleep cycles is important for feeling rested and refreshed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults need 4-6 complete sleep cycles per night, which translates to 6-9 hours of sleep. The exact number depends on your individual needs and lifestyle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best time to wake up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best time to wake up is at the end of a sleep cycle, when you're in light sleep. Our calculator helps you determine the optimal wake-up time based on your sleep cycles."
+            }
+          }
+        ]
+      }
+    </script>
+
     <!-- Title -->
-    <title>
-      Sleep Cycle Calculator | Optimize Your Sleep for Better Health
-    </title>
+    <title>Sleep Cycle Calculator | Optimize Your Sleep Schedule</title>
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="/index.html">Sleep Cycle</a>
+        <a class="navbar-brand" href="/index.html">
+          <i class="fas fa-moon"></i> Sleep Cycle
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="/index.html">Home</a>
             <a class="nav-link" href="/Learn About Sleep/index.html"
               >Learn About Sleep</a
             >
             <a class="nav-link" href="/Calculate Sleep/index.html"
               >Calculate Sleep</a
             >
+            <a class="nav-link" href="/Blog/index.html">Blog</a>
             <a class="nav-link" href="/Contact Us/index.html">Contact Us</a>
           </div>
         </div>
@@ -101,85 +151,227 @@
     <!-- Navbar End -->
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <h1>Welcome to Sleep Cycle Calculator</h1>
-      <p>
-        Discover the key to better health and well-being through quality sleep.
-        Learn, calculate, and optimize your sleep patterns today.
-      </p>
-      <a href="/Calculate Sleep/index.html" class="btn btn-calculate shadow-lg"
-        >Calculate Sleep</a
-      >
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Why Sleep Matters Section -->
-    <section class="content-section py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Why Sleep Matters</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Health Benefits</h3>
-            <p>
-              Quality sleep is essential for maintaining good health and
-              well-being. It helps:
+    <div class="hero-section position-relative overflow-hidden">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-8 mx-auto text-center text-white">
+            <h1 class="display-3 fw-bold mb-4 animate-on-scroll">
+              Sleep Better, Live Better
+            </h1>
+            <p class="lead mb-5 animate-on-scroll">
+              Discover your optimal sleep schedule and wake up feeling refreshed
+              and energized every morning.
             </p>
-            <ul>
-              <li>Improve memory and cognitive function</li>
-              <li>Boost immune system</li>
-              <li>Regulate mood and reduce stress</li>
-              <li>Support physical recovery and growth</li>
-            </ul>
+            <div class="d-flex justify-content-center gap-3 animate-on-scroll">
+              <a
+                href="./Calculate Sleep/index.html"
+                class="btn btn-primary btn-lg px-4 py-3"
+                role="button"
+                onclick="console.log('Calculate button clicked'); return true;"
+              >
+                <i class="fas fa-calculator me-2"></i>Calculate Sleep Schedule
+              </a>
+              <a
+                href="./Learn About Sleep/index.html"
+                class="btn btn-outline-light btn-lg px-4 py-3"
+                role="button"
+                onclick="console.log('Learn button clicked'); return true;"
+              >
+                <i class="fas fa-book me-2"></i>Learn More
+              </a>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h3>Sleep Cycle Science</h3>
-            <p>Understanding your sleep cycles is crucial because:</p>
-            <ul>
-              <li>Each cycle lasts about 90 minutes</li>
-              <li>Complete cycles are essential for restful sleep</li>
-              <li>Waking up between cycles leads to better alertness</li>
-              <li>Proper timing can improve sleep quality</li>
-            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 animate-on-scroll">
+          Why Sleep Cycles Matter
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Brain Function"
+              />
+              <div class="card-body text-center p-4">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-brain fa-3x text-primary"></i>
+                </div>
+                <h3 class="card-title h4">Better Brain Function</h3>
+                <p class="card-text">
+                  Complete sleep cycles enhance memory, focus, and cognitive
+                  performance throughout the day.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Improved Health"
+              />
+              <div class="card-body text-center p-4">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-heartbeat fa-3x text-primary"></i>
+                </div>
+                <h3 class="card-title h4">Improved Health</h3>
+                <p class="card-text">
+                  Proper sleep cycles support immune function, heart health, and
+                  overall well-being.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Sleep Cycles"
+              />
+              <div class="card-body text-center p-4">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-battery-full fa-3x text-primary"></i>
+                </div>
+                <h3 class="card-title h4">More Energy</h3>
+                <p class="card-text">
+                  Wake up at the right time in your sleep cycle to feel
+                  refreshed and energized.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- How It Works Section -->
-    <section class="content-section py-5 bg-light">
+    <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4">How Our Calculator Works</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title">1. Enter Your Details</h3>
+        <h2 class="text-center mb-5 animate-on-scroll">
+          How Our Calculator Works
+        </h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="image-wrapper rounded shadow-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="img-fluid"
+                alt="Sleep Cycle Graph"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="ps-lg-4">
+              <h3 class="h2 mb-4">Understanding Sleep Cycles</h3>
+              <p class="lead mb-4">
+                Our calculator uses the science of sleep cycles to determine the
+                best times for you to go to bed or wake up. Each sleep cycle
+                lasts about 90 minutes, and waking up at the end of a cycle
+                helps you feel more refreshed.
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-3 d-flex align-items-center">
+                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                  <span>Calculate based on your desired wake-up time</span>
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                  <span>Find optimal bedtimes for complete cycles</span>
+                </li>
+                <li class="mb-3 d-flex align-items-center">
+                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                  <span>Get personalized recommendations</span>
+                </li>
+              </ul>
+              <a
+                href="/Calculate Sleep/index.html"
+                class="btn btn-primary btn-lg mt-4"
+              >
+                <i class="fas fa-calculator me-2"></i>Try Our Calculator
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 animate-on-scroll">
+          Latest Sleep Insights
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Brain Function"
+              />
+              <div class="card-body p-4">
+                <h3 class="card-title h4">The Science of Sleep</h3>
                 <p class="card-text">
-                  Simply input your desired wake-up time or bedtime to get
-                  started.
+                  Explore the latest research and discoveries about sleep cycles
+                  and their impact on health.
                 </p>
+                <a
+                  href="/Blog/science-of-sleep.html"
+                  class="btn btn-outline-primary"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title">2. Advanced Calculations</h3>
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Improved Health"
+              />
+              <div class="card-body p-4">
+                <h3 class="card-title h4">Understanding Sleep Disorders</h3>
                 <p class="card-text">
-                  Our algorithm calculates optimal sleep times based on sleep
-                  cycle science.
+                  Learn about common sleep disorders and the latest treatment
+                  options available.
                 </p>
+                <a
+                  href="/Blog/sleep-disorders.html"
+                  class="btn btn-outline-primary"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h3 class="card-title">3. Get Your Schedule</h3>
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80"
+                class="card-img-top"
+                alt="Sleep Hygiene"
+              />
+              <div class="card-body p-4">
+                <h3 class="card-title h4">Sleep Hygiene Guide</h3>
                 <p class="card-text">
-                  Receive personalized recommendations for your perfect sleep
-                  schedule.
+                  Discover practical tips and best practices for creating the
+                  perfect sleep environment.
                 </p>
+                <a
+                  href="/Blog/sleep-hygiene.html"
+                  class="btn btn-outline-primary"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -187,82 +379,200 @@
       </div>
     </section>
 
-    <!-- Sleep Tips Section -->
-    <section class="content-section py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Sleep Tips and Resources</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Improve Your Sleep Quality</h3>
-            <ul>
-              <li>Maintain a consistent sleep schedule</li>
-              <li>Create a relaxing bedtime routine</li>
-              <li>Optimize your sleep environment</li>
-              <li>Limit screen time before bed</li>
-              <li>Watch your caffeine intake</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <h3>Common Sleep Myths</h3>
-            <ul>
-              <li>You can "catch up" on sleep</li>
-              <li>Older people need less sleep</li>
-              <li>Snoring is harmless</li>
-              <li>Alcohol helps you sleep better</li>
-              <li>Watching TV helps you fall asleep</li>
-            </ul>
+    <!-- Newsletter Section -->
+    <section
+      class="py-5 bg-primary text-white position-relative overflow-hidden"
+    >
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center animate-on-scroll">
+            <h2 class="display-5 fw-bold mb-4">
+              Stay Updated with Sleep Science
+            </h2>
+            <p class="lead mb-4">
+              Subscribe to our newsletter for the latest sleep research, tips,
+              and insights.
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group input-group-lg mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="content-section py-5 bg-light">
+    <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion" id="faqAccordion">
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq1"
-              >
-                How many sleep cycles do I need?
-              </button>
-            </h3>
-            <div
-              id="faq1"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                Most adults need 4-6 complete sleep cycles per night, which
-                translates to 6-9 hours of sleep.
+        <h2 class="text-center mb-5 animate-on-scroll">
+          Frequently Asked Questions
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    What is a sleep cycle?
+                  </button>
+                </h3>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    A sleep cycle is a period of sleep that typically lasts
+                    about 90 minutes and includes different stages of sleep,
+                    from light sleep to deep sleep and REM sleep. Completing
+                    full sleep cycles is important for feeling rested and
+                    refreshed.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    How many sleep cycles do I need?
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Most adults need 4-6 complete sleep cycles per night, which
+                    translates to 6-9 hours of sleep. The exact number depends
+                    on your individual needs and lifestyle.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    What is the best time to wake up?
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    The best time to wake up is at the end of a sleep cycle,
+                    when you're in light sleep. Our calculator helps you
+                    determine the optimal wake-up time based on your sleep
+                    cycles.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq2"
-              >
-                What is the best time to go to bed?
-              </button>
-            </h3>
-            <div
-              id="faq2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqAccordion"
-            >
-              <div class="accordion-body">
-                The best bedtime depends on your wake-up time and sleep cycle
-                duration. Use our calculator to find your optimal sleep
-                schedule.
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert Advice Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 animate-on-scroll">Expert Sleep Tips</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Consistent Sleep Schedule</h3>
+                <p class="card-text">
+                  Maintain a regular sleep schedule, even on weekends, to
+                  regulate your body's internal clock.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Go to bed at
+                    the same time each night
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Wake up at the
+                    same time each morning
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Avoid large
+                    variations in sleep times
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Sleep Environment</h3>
+                <p class="card-text">
+                  Create an optimal sleep environment to promote better sleep
+                  quality.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Keep your
+                    bedroom cool and dark
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Use
+                    comfortable bedding
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Minimize noise
+                    and distractions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h3 class="h5 card-title">Pre-Sleep Routine</h3>
+                <p class="card-text">
+                  Develop a relaxing pre-sleep routine to signal your body it's
+                  time to sleep.
+                </p>
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Avoid screens
+                    before bed
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Practice
+                    relaxation techniques
+                  </li>
+                  <li>
+                    <i class="fas fa-check text-success me-2"></i>Limit caffeine
+                    and heavy meals
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -271,31 +581,100 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
             <p>
+              <i class="fas fa-moon"></i>
               &copy;
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              Somnath | Designed for Better Sleep.
+              Somnath | Designed for Better Sleep
             </p>
             <div class="footer-links">
               <a href="/privacy-policy.html">Privacy Policy</a> |
               <a href="/terms-of-service.html">Terms of Service</a>
+            </div>
+            <div class="social-icons mt-3">
+              <a
+                href="https://www.linkedin.com/in/somnath-bhattarai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                href="https://x.com/sumbhat2"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/suman_271_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="mt-3">
+              <p class="mb-0">
+                Contact:
+                <a href="mailto:sumanbhattarai200@gmail.com"
+                  >sumanbhattarai200@gmail.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
       </div>
     </footer>
 
-    <!-- Bootstrap Script -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animation Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animation observer
+        const elements = document.querySelectorAll(".animate-on-scroll");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        elements.forEach((element) => observer.observe(element));
+
+        // Add click handlers for hero buttons
+        const heroButtons = document.querySelectorAll(".hero-section .btn");
+        heroButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            console.log("Button clicked:", this.href);
+            // Allow default navigation
+            return true;
+          });
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector(".newsletter-form");
+        if (newsletterForm) {
+          newsletterForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+              alert(
+                "Thank you for subscribing! We will keep you updated with the latest sleep science news."
+              );
+              this.reset();
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>
