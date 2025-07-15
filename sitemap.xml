@@ -2,28 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Root pages -->
-  <url><loc>https://www.remnix.me/</loc></url>
-  <url><loc>https://www.remnix.me/privacy-policy.html</loc></url>
-  <url><loc>https://www.remnix.me/terms-of-service.html</loc></url>
+  <url>
+    <loc>https://www.remnix.me/</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remnix.me/privacy-policy.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remnix.me/terms-of-service.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Blog pages -->
-  <url><loc>https://www.remnix.me/Blog/index.html</loc></url>
-  <url><loc>https://www.remnix.me/Blog/science-of-sleep.html</loc></url>
-  <url><loc>https://www.remnix.me/Blog/sleep-disorders.html</loc></url>
-  <url><loc>https://www.remnix.me/Blog/sleep-hygiene.html</loc></url>
+  <url>
+    <loc>https://www.remnix.me/Blog/index.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remnix.me/Blog/science-of-sleep.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remnix.me/Blog/sleep-disorders.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.remnix.me/Blog/sleep-hygiene.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Calculate Sleep pages -->
-  <url><loc>https://www.remnix.me/Calculate%20Sleep/index.html</loc></url>
+  <url>
+    <loc>https://www.remnix.me/Calculate%20Sleep/index.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Contact Us pages -->
-  <url><loc>https://www.remnix.me/Contact%20Us/index.html</loc></url>
+  <url>
+    <loc>https://www.remnix.me/Contact%20Us/index.html</loc>
+    <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+
 
   <!-- Learn About Sleep pages -->
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/index.html</loc></url>
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-cycles.html</loc></url>
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-disorders.html</loc></url>
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene-new.html</loc></url>
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene.html</loc></url>
+  <url>
+  <loc>https://www.remnix.me/Learn%20About%20Sleep/index.html</loc>
+  <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-cycles.html</loc>
+  <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-disorders.html</loc>
+  <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene-new.html</loc>
+  
+  <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+    
+    </url>
+
+  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene.html</loc>
+  <lastmod>2025-07-15</lastmod>
+    <priority>0.7</priority>
+    </url>
 
 
 </urlset>
