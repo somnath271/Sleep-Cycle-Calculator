@@ -1,8 +1,8 @@
-# Sleep Cycle Calculator
+# Remnix - Sleep Cycle Calculator
 
 ## Overview
 
-The Sleep Cycle Calculator is a web application designed to help users determine optimal sleep and wake-up times based on their desired wake-up time or bedtime. This tool helps users align their sleep patterns with natural sleep cycles, leading to more restful and refreshing sleep.
+The Remnix - Sleep Cycle Calculator is a web application designed to help users determine optimal sleep and wake-up times based on their desired wake-up time or bedtime. This tool helps users align their sleep patterns with natural sleep cycles, leading to more restful and refreshing sleep.
 
 ## Features
 
@@ -24,10 +24,15 @@ The Sleep Cycle Calculator is a web application designed to help users determine
 
    ```bash
    git clone https://github.com/somnath271/sleep-cycle-calculator.git
-   
+
+   ```
+
 2. Navigate to the project directory:
+
    ```bash
    cd sleep-cycle-calculator
+
+   ```
 
 3. Open the index.html file in your preferred web browser to use the application.
 
