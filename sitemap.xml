@@ -20,36 +20,36 @@
 
   <!-- Blog pages -->
   <url>
-    <loc>https://www.remnix.me/Blog/index.html</loc>
+    <loc>https://www.remnix.me/blog/index.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.remnix.me/Blog/science-of-sleep.html</loc>
+    <loc>https://www.remnix.me/blog/science-of-sleep.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.remnix.me/Blog/sleep-disorders.html</loc>
+    <loc>https://www.remnix.me/blog/sleep-disorders.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.remnix.me/Blog/sleep-hygiene.html</loc>
+    <loc>https://www.remnix.me/blog/sleep-hygiene.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
 
   <!-- Calculate Sleep pages -->
   <url>
-    <loc>https://www.remnix.me/Calculate%20Sleep/index.html</loc>
+    <loc>https://www.remnix.me/calculate-sleep/index.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
 
   <!-- Contact Us pages -->
   <url>
-    <loc>https://www.remnix.me/Contact%20Us/index.html</loc>
+    <loc>https://www.remnix.me/contact-us/index.html</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
@@ -58,29 +58,29 @@
 
   <!-- Learn About Sleep pages -->
   <url>
-  <loc>https://www.remnix.me/Learn%20About%20Sleep/index.html</loc>
+  <loc>https://www.remnix.me/learn-about-sleep/index.html</loc>
   <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
     </url>
 
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-cycles.html</loc>
+  <url><loc>https://www.remnix.me/learn-about-sleep/sleep-cycles.html</loc>
   <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
 
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-disorders.html</loc>
+  <url><loc>https://www.remnix.me/learn-about-sleep/sleep-disorders.html</loc>
   <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
     </url>
 
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene-new.html</loc>
+  <url><loc>https://www.remnix.me/learn-about-sleep/sleep-hygiene-new.html</loc>
   
   <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
     
     </url>
 
-  <url><loc>https://www.remnix.me/Learn%20About%20Sleep/sleep-hygiene.html</loc>
+  <url><loc>https://www.remnix.me/learn-about-sleep/sleep-hygiene.html</loc>
   <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
     </url>

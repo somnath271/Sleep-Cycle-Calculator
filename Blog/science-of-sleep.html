@@ -39,32 +39,53 @@
     <link rel="stylesheet" href="../styles.css" />
     <meta property="og:type" content="article" />
 
-    <!-- Structured Data -->
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "The Science of Sleep: Understanding Sleep Cycles and Their Impact on Health",
-        "description": "Explore the fascinating science behind sleep cycles and how they affect your overall health and well-being.",
-        "image": "https://images.unsplash.com/photo-1511882150382-421056c89033?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=450&q=80",
-        "author": {
-          "@type": "Person",
-          "name": "Somnath Bhattarai"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Sleep Cycle Calculator",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://sleep-cycle-calculator-nine.vercel.app/images/logo.png"
-          }
-        },
-        "datePublished": "2024-04-18",
-        "dateModified": "2024-04-18",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://sleep-cycle-calculator-nine.vercel.app/Blog/science-of-sleep.html"
+        "@type": "WebSite",
+        "name": "Remnix",
+        "alternateName": "Remnix - Sleep Cycle Calculator",
+        "url": "https://www.remnix.me/",
+        "description": "Remnix is a smart sleep cycle calculator that helps you wake up refreshed. It calculates optimal sleep cycles so you can wake energized.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.remnix.me/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
         }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a sleep cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A sleep cycle is a period of sleep that typically lasts about 90 minutes and includes different stages of sleep, from light sleep to deep sleep and REM sleep. Completing full sleep cycles is important for feeling rested and refreshed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults need 4-6 complete sleep cycles per night, which translates to 6-9 hours of sleep. The exact number depends on your individual needs and lifestyle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best time to wake up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best time to wake up is at the end of a sleep cycle, when you're in light sleep. Our calculator helps you determine the optimal wake-up time based on your sleep cycles."
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -105,14 +126,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="/index.html">Home</a>
-            <a class="nav-link" href="/Learn About Sleep/index.html"
+            <a class="nav-link" href="/learn-about-sleep/index.html"
               >Learn About Sleep</a
             >
-            <a class="nav-link" href="/Calculate Sleep/index.html"
+            <a class="nav-link" href="/calculate-sleep/index.html"
               >Calculate Sleep</a
             >
-            <a class="nav-link active" href="/Blog/index.html">Blog</a>
-            <a class="nav-link" href="/Contact Us/index.html">Contact Us</a>
+            <a class="nav-link active" href="/blog/index.html">Blog</a>
+            <a class="nav-link" href="/contact-us/index.html">Contact Us</a>
           </div>
         </div>
       </div>
