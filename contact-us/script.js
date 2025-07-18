@@ -1,30 +1,37 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const loader = document.getElementById("loader");
-  const content = document.getElementById("content");
+  const form = document.getElementById("contactForm");
+  const alertBox = document.getElementById("formAlert");
 
-  // Simulate loading time
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault(); // stop normal form submission
 
-  setTimeout(() => {
-    loader.classList.add("hidden");
-    content.classList.remove("hidden");
-    // Fade in content
-    content.style.opacity = 0;
-    let opacity = 0;
-    const fadeIn = setInterval(() => {
-      if (opacity < 1) {
-        opacity += 0.1;
-        content.style.opacity = opacity;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alertBox.textContent = "✅ Thank you! Your message has been sent.";
+        alertBox.className = "alert alert-success";
+        alertBox.classList.remove("d-none");
+        form.reset(); // this clears the form inputs
       } else {
-        clearInterval(fadeIn);
+        alertBox.textContent =
+          "⚠️ Oops! Something went wrong. Please try again.";
+        alertBox.className = "alert alert-danger";
+        alertBox.classList.remove("d-none");
       }
-    }, 50);
-  }, 200);
-
-  // Form submission
-  const form = document.getElementById("contact-form");
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Thank you for contacting us! We will get back to you soon.");
-    form.reset();
+    } catch (error) {
+      alertBox.textContent = "❌ Error submitting the form. Try again later.";
+      alertBox.className = "alert alert-danger";
+      alertBox.classList.remove("d-none");
+      console.error("Form submission error:", error);
+    }
   });
 });
