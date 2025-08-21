@@ -20,7 +20,7 @@
 
   <!-- Blog pages -->
   <url>
-    <loc>https://www.remnix.me/blog/index.html</loc>
+    <loc>https://www.remnix.me/blog/</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
@@ -42,21 +42,21 @@
 
   <!-- Calculate Sleep pages -->
   <url>
-    <loc>https://www.remnix.me/calculate-sleep/index.html</loc>
+    <loc>https://www.remnix.me/calculate-sleep/</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.8</priority> 
   </url>
 
   <!-- Contact Us pages -->
   <url>
-    <loc>https://www.remnix.me/contact-us/index.html</loc>
+    <loc>https://www.remnix.me/contact-us/</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.8</priority> 
   </url>
 
   <!-- Learn About Sleep pages -->
   <url>
-    <loc>https://www.remnix.me/learn-about-sleep/index.html</loc>
+    <loc>https://www.remnix.me/learn-about-sleep/</loc>
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority>
   </url>
@@ -80,6 +80,5 @@
     <lastmod>2025-07-15</lastmod>
     <priority>0.7</priority> 
   </url>
-
 
 </urlset>
