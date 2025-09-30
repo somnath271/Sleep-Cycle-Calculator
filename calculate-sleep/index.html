@@ -3,12 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sleep Calculator | Find Your Optimal Sleep Schedule</title>
+    <title>Sleep Calculator (Bedtime & Wake Up Time) | REMNIX</title>
     <link rel="icon" href="/images/remnix_favicon.ico" type="image/x-icon" />
-    <link
-      rel="canonical"
-      href="https://www.remnix.me/calculate-sleep/"
-    />
+    <link rel="canonical" href="https://www.remnix.me/calculate-sleep/" />
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
     <!-- Google Adsense -->
     <script
@@ -33,7 +30,47 @@
 
     <meta
       name="description"
-      content="Calculate your perfect sleep schedule based on sleep cycles. Get personalized recommendations for better sleep and wake up feeling refreshed."
+      content="Sleep calculator and bedtime calculator to find optimal wake up times by sleep cycles. Calculate your perfect sleep time and wake up refreshed."
+    />
+    <meta
+      name="keywords"
+      content="sleep calculator, bedtime calculator, wake up time calculator, sleep cycles, REM sleep, deep sleep, optimal wake up time, best time to sleep, sleep schedule, sleep hygiene, how to fall asleep fast, recommended sleep hours, circadian rhythm, sleep debt, sleep latency, sleep inertia, insomnia, chronotype, morning routine, power nap, nap calculator, polyphasic sleep, biphasic sleep, monophasic sleep, melatonin, sleep deprivation, sleep apnea, CPAP, snoring, sleep tracker"
+    />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Sleep Calculator (Bedtime & Wake Up Time) | REMNIX"
+    />
+    <meta
+      property="og:description"
+      content="Find the best time to sleep or wake up using natural sleep cycles. Calculate ideal bedtimes and wake up times to feel refreshed."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.remnix.me/calculate-sleep/" />
+    <meta property="og:image" content="/images/og-image.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sleep Calculator (Bedtime & Wake Up Time) | REMNIX"
+    />
+    <meta
+      name="twitter:description"
+      content="Calculate your perfect sleep or wake time based on sleep cycles and wake up refreshed."
+    />
+    <meta name="twitter:image" content="/images/og-image.png" />
+    <meta name="twitter:site" content="@sumbhat2" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://pagead2.googlesyndication.com"
+      crossorigin
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -111,6 +148,9 @@
               <form id="wakeUpForm">
                 <div class="row g-3 justify-content-center">
                   <div class="col-md-3">
+                    <label for="wakeUpHours" class="form-label visually-hidden"
+                      >Wake up hour</label
+                    >
                     <select class="form-select" id="wakeUpHours">
                       <option value="">Hour</option>
                       <option value="1">1</option>
@@ -128,6 +168,11 @@
                     </select>
                   </div>
                   <div class="col-md-3">
+                    <label
+                      for="wakeUpMinutes"
+                      class="form-label visually-hidden"
+                      >Wake up minutes</label
+                    >
                     <select class="form-select" id="wakeUpMinutes">
                       <option value="">Minute</option>
                       <option value="00">00</option>
@@ -137,6 +182,9 @@
                     </select>
                   </div>
                   <div class="col-md-3">
+                    <label for="wakeUpPeriod" class="form-label visually-hidden"
+                      >AM or PM</label
+                    >
                     <select class="form-select" id="wakeUpPeriod">
                       <option value="AM">AM</option>
                       <option value="PM">PM</option>
@@ -148,6 +196,7 @@
                     type="button"
                     class="btn btn-primary btn-lg"
                     id="calculateWakeUpButton"
+                    aria-label="Calculate ideal bedtimes based on desired wake up time"
                   >
                     <i class="fas fa-calculator me-2"></i>Calculate Bedtime
                   </button>
@@ -155,6 +204,7 @@
                     type="button"
                     class="btn btn-outline-secondary btn-lg ms-2"
                     id="checkAgainButton"
+                    aria-label="Reset wake up time form"
                   >
                     <i class="fas fa-redo me-2"></i>Reset
                   </button>
@@ -171,6 +221,9 @@
               <form id="bedtimeForm">
                 <div class="row g-3 justify-content-center">
                   <div class="col-md-3">
+                    <label for="bedtimeHours" class="form-label visually-hidden"
+                      >Bedtime hour</label
+                    >
                     <select class="form-select" id="bedtimeHours">
                       <option value="">Hour</option>
                       <option value="1">1</option>
@@ -188,6 +241,11 @@
                     </select>
                   </div>
                   <div class="col-md-3">
+                    <label
+                      for="bedtimeMinutes"
+                      class="form-label visually-hidden"
+                      >Bedtime minutes</label
+                    >
                     <select class="form-select" id="bedtimeMinutes">
                       <option value="">Minute</option>
                       <option value="00">00</option>
@@ -197,6 +255,11 @@
                     </select>
                   </div>
                   <div class="col-md-3">
+                    <label
+                      for="bedtimePeriod"
+                      class="form-label visually-hidden"
+                      >AM or PM</label
+                    >
                     <select class="form-select" id="bedtimePeriod">
                       <option value="AM">AM</option>
                       <option value="PM">PM</option>
@@ -208,6 +271,7 @@
                     type="button"
                     class="btn btn-primary btn-lg"
                     id="calculateBedtimeButton"
+                    aria-label="Calculate wake up times based on chosen bedtime"
                   >
                     <i class="fas fa-calculator me-2"></i>Calculate Wake Up Time
                   </button>
@@ -215,6 +279,7 @@
                     type="button"
                     class="btn btn-outline-secondary btn-lg ms-2"
                     id="checkAgainFallButton"
+                    aria-label="Reset bedtime form"
                   >
                     <i class="fas fa-redo me-2"></i>Reset
                   </button>
@@ -231,6 +296,7 @@
                 type="button"
                 class="btn btn-primary btn-lg me-2"
                 id="sleepNowButton"
+                aria-label="Calculate wake up times if I go to sleep now"
               >
                 <i class="fas fa-bed me-2"></i>Go to Sleep Now
               </button>
@@ -238,9 +304,51 @@
                 type="button"
                 class="btn btn-primary btn-lg"
                 id="sleepNowFallButton"
+                aria-label="Open modal to set wake up time"
               >
                 <i class="fas fa-clock me-2"></i>Set Wake Up Time
               </button>
+            </div>
+          </div>
+
+          <!-- How This Calculator Works -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">How This Sleep Calculator Works</h3>
+              <p>
+                This sleep time calculator uses natural
+                <strong>sleep cycles</strong> of about 90 minutes. Waking at the
+                end of a cycle can reduce sleep inertia and help you feel more
+                refreshed. Choose a desired wake up time to see recommended
+                bedtimes, or select a bedtime to see your optimal wake up times.
+              </p>
+              <p class="mb-0">
+                Want to learn more? Read about
+                <a href="/learn-about-sleep/sleep-cycles.html">sleep cycles</a>,
+                <a href="/learn-about-sleep/sleep-hygiene.html">sleep hygiene</a
+                >, and
+                <a href="/learn-about-sleep/sleep-disorders.html"
+                  >sleep disorders</a
+                >.
+              </p>
+            </div>
+          </div>
+
+          <!-- Recommended Sleep Hours -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">Recommended Sleep Hours</h3>
+              <ul>
+                <li>
+                  <strong>Adults (18-64):</strong> 7-9 hours (≈ 5-6 cycles)
+                </li>
+                <li><strong>Older adults (65+):</strong> 7-8 hours</li>
+                <li><strong>Teenagers (14-17):</strong> 8-10 hours</li>
+              </ul>
+              <p class="mb-0 text-muted">
+                Everyone is different. Use this bedtime calculator as a guide
+                and adjust based on how you feel.
+              </p>
             </div>
           </div>
 
@@ -266,6 +374,413 @@
                   <i class="fas fa-print me-2"></i>Print Schedule
                 </button>
               </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="card shadow-lg mb-5 animate-on-scroll" id="faq">
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">Sleep Calculator FAQs</h3>
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q1h">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q1"
+                      aria-expanded="true"
+                      aria-controls="q1"
+                    >
+                      How many sleep cycles should I get each night?
+                    </button>
+                  </h4>
+                  <div
+                    id="q1"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="q1h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Most adults do well with <strong>4-6 cycles</strong> per
+                      night (about 6-9 hours).
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q2h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q2"
+                      aria-expanded="false"
+                      aria-controls="q2"
+                    >
+                      Is waking at the end of a sleep cycle better?
+                    </button>
+                  </h4>
+                  <div
+                    id="q2"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q2h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes. Waking <em>between</em> cycles (not from deep sleep)
+                      can reduce grogginess.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q3h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q3"
+                      aria-expanded="false"
+                      aria-controls="q3"
+                    >
+                      What is the ideal sleep duration for adults?
+                    </button>
+                  </h4>
+                  <div
+                    id="q3"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q3h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      The ideal range is <strong>7-9 hours</strong>, though
+                      individual needs vary.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q4h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q4"
+                      aria-expanded="false"
+                      aria-controls="q4"
+                    >
+                      How do I use this sleep calculator?
+                    </button>
+                  </h4>
+                  <div
+                    id="q4"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q4h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Choose a wake up time to get bedtimes, or pick a bedtime
+                      to get recommended wake up times based on 90-minute
+                      cycles.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q5h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q5"
+                      aria-expanded="false"
+                      aria-controls="q5"
+                    >
+                      How long should a nap be?
+                    </button>
+                  </h4>
+                  <div
+                    id="q5"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q5h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      A <strong>power nap</strong> of 10–20 minutes can boost
+                      alertness. A full <strong>sleep cycle</strong>
+                      nap of ~90 minutes may aid memory and recovery without
+                      heavy sleep inertia.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q6h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q6"
+                      aria-expanded="false"
+                      aria-controls="q6"
+                    >
+                      What is sleep latency and why does it matter?
+                    </button>
+                  </h4>
+                  <div
+                    id="q6"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q6h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      <strong>Sleep latency</strong> is the time it takes to
+                      fall asleep. Accounting for it helps you select a
+                      <strong>bedtime</strong> so you still wake at the end of a
+                      90-minute cycle. Many people assume zero latency, which
+                      can shift the <strong>wake up time</strong>.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="q7h">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q7"
+                      aria-expanded="false"
+                      aria-controls="q7"
+                    >
+                      Can I recover from sleep debt on weekends?
+                    </button>
+                  </h4>
+                  <div
+                    id="q7"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="q7h"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      A little extra sleep may reduce
+                      <strong>sleep debt</strong>, but big schedule swings can
+                      disrupt the <strong>circadian rhythm</strong>. Aim for
+                      consistency and gradually shift your
+                      <strong>sleep schedule</strong> if needed.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- How to Improve Your Sleep Quality -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="improve-sleep-quality"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">
+                How to Improve Your Sleep Quality
+              </h3>
+              <p>
+                High-quality sleep depends on consistent
+                <strong>sleep schedules</strong>, a dark and cool
+                <strong>sleep environment</strong>, and healthy
+                <strong>sleep hygiene</strong> habits. Go to bed and wake up at
+                the same time daily to reinforce your
+                <strong>circadian rhythm</strong>. Avoid caffeine and heavy
+                meals late in the day, and reduce exposure to blue light in the
+                evening. Create a relaxing pre-sleep routine—reading, light
+                stretching, or meditation—to signal to your body that it's time
+                to wind down.
+              </p>
+              <p>
+                If you're looking to build better habits, explore our
+                <a href="/learn-about-sleep/sleep-hygiene.html"
+                  >sleep hygiene guide</a
+                >
+                for practical tips and strategies that support deeper, more
+                restorative sleep.
+              </p>
+            </div>
+          </div>
+
+          <!-- What Happens During Sleep -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="what-happens-during-sleep"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">What Happens During Sleep</h3>
+              <p>
+                Sleep is composed of <strong>NREM</strong> (stages N1, N2, N3)
+                and <strong>REM sleep</strong>, cycling every ~90 minutes. In
+                <strong>N3 (deep sleep)</strong>, the body focuses on physical
+                recovery: tissue repair, immune support, and growth hormone
+                release. In <strong>REM sleep</strong>, the brain consolidates
+                memories, processes emotions, and supports learning and
+                creativity. Cycling between these stages is normal and healthy.
+              </p>
+              <p>
+                Our
+                <a href="/learn-about-sleep/sleep-cycles.html"
+                  >sleep cycle article</a
+                >
+                explains how your body moves through these stages and why timing
+                your wake-up at the end of a cycle can help you feel more alert
+                in the morning.
+              </p>
+            </div>
+          </div>
+
+          <!-- What is REM Sleep? -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="what-is-rem-sleep"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">What is REM Sleep?</h3>
+              <p>
+                <strong>REM (Rapid Eye Movement) sleep</strong> is the stage
+                associated with vivid dreams and heightened brain activity. It
+                supports <strong>memory consolidation</strong>, emotional
+                regulation, and neuroplasticity. Adults typically spend 20–25%
+                of the night in REM, with longer REM periods occurring in the
+                second half of the night. Disruptions to REM—like inconsistent
+                bedtimes, alcohol, or stress—can affect mood, cognition, and
+                next-day performance.
+              </p>
+              <p>
+                Learn more about
+                <a href="/learn-about-sleep/sleep-hygiene.html"
+                  >habits that protect REM sleep</a
+                >
+                and overall sleep quality.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tips to Fall Asleep Faster -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="fall-asleep-faster"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">Tips to Fall Asleep Faster</h3>
+              <ul>
+                <li>
+                  Keep a consistent <strong>bedtime</strong> and wake time—even
+                  on weekends.
+                </li>
+                <li>
+                  Dim lights 60–90 minutes before bed to support
+                  <strong>melatonin</strong> release.
+                </li>
+                <li>
+                  Avoid caffeine after mid-day and limit late-night heavy meals.
+                </li>
+                <li>
+                  Use a <strong>wind-down routine</strong> (reading, breathing
+                  exercises, light stretching).
+                </li>
+                <li>
+                  Keep your bedroom <strong>cool, dark, and quiet</strong>;
+                  consider blackout curtains and white noise.
+                </li>
+                <li>
+                  Reserve the bed for <strong>sleep</strong> and intimacy; avoid
+                  doomscrolling in bed.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Common Sleep Questions -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="common-questions"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">Common Sleep Questions</h3>
+              <p>
+                <strong>How many hours of sleep do I need?</strong> Most adults
+                need <strong>7–9 hours</strong> per night, often corresponding
+                to <strong>5–6 sleep cycles</strong>. Teens and older adults
+                have different ranges. If you wake groggy, try adjusting your
+                <strong>sleep window</strong> by 15–30 minutes and aim to wake
+                at the end of a 90-minute cycle.
+              </p>
+              <p>
+                <strong>What’s the best time to sleep?</strong> Align sleep with
+                your <strong>circadian rhythm</strong> by keeping a consistent
+                schedule. Use this <strong>bedtime calculator</strong> to find
+                an optimal window based on your desired wake time or current
+                bedtime.
+              </p>
+              <p class="mb-0">
+                Explore more in our
+                <a href="/learn-about-sleep/index.html">Learn About Sleep</a>
+                hub and <a href="/blog/index.html">sleep blog</a> for in-depth
+                guides.
+              </p>
+            </div>
+          </div>
+
+          <!-- How This Tool Compares -->
+          <div
+            class="card shadow-lg mb-5 animate-on-scroll"
+            id="how-it-compares"
+          >
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">
+                How This Sleep Calculator Compares
+              </h3>
+              <p>
+                Unlike a generic <strong>sleep chart</strong> or simple
+                <strong>sleep tracker</strong>, this calculator uses 90-minute
+                <strong>sleep cycle</strong> modeling to recommend precise
+                <strong>bedtimes</strong> and <strong>wake up times</strong>. It
+                also accounts for <strong>sleep latency</strong> (the minutes it
+                takes to fall asleep) by suggesting multiple options across
+                cycles, improving your chances of waking at the end of a
+                <strong>REM</strong> or light sleep stage.
+              </p>
+              <p class="mb-0">
+                For deeper learning, explore
+                <a href="/learn-about-sleep/sleep-cycles.html">sleep cycles</a>
+                and our <a href="/blog/index.html">blog</a> guides on
+                <strong>sleep debt</strong>, <strong>napping</strong>, and
+                <strong>chronotypes</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Benefits of Using a Sleep Cycle Calculator -->
+          <div class="card shadow-lg mb-5 animate-on-scroll" id="benefits">
+            <div class="card-body p-4">
+              <h3 class="text-center mb-4">
+                Benefits of Using a Sleep Cycle Calculator
+              </h3>
+              <ul>
+                <li>
+                  Reduce morning <strong>sleep inertia</strong> and grogginess
+                  by timing wake-ups.
+                </li>
+                <li>
+                  Build a consistent <strong>sleep schedule</strong> aligned to
+                  your <strong>circadian rhythm</strong>.
+                </li>
+                <li>
+                  Estimate ideal <strong>nap</strong> durations and
+                  <strong>power nap</strong> windows.
+                </li>
+                <li>
+                  Understand how <strong>REM</strong> and
+                  <strong>deep sleep</strong> contribute to recovery and
+                  cognition.
+                </li>
+                <li>
+                  Spot patterns in <strong>sleep deprivation</strong> or
+                  <strong>sleep debt</strong> and adjust habits.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -465,7 +980,10 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
     <!-- Animation Script -->
     <script>
@@ -488,6 +1006,86 @@
     </script>
 
     <!-- Calculator Script -->
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+
+    <!-- Structured Data: WebApplication -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sleep Calculator",
+        "description": "Calculate your ideal bedtime or wake up time based on sleep cycles.",
+        "url": "https://www.remnix.me/calculate-sleep/",
+        "applicationCategory": "Health",
+        "operatingSystem": "Web",
+        "browserRequirements": "Requires JavaScript"
+      }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles should I get each night?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults do well with 4-6 cycles per night (about 6-9 hours)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is waking at the end of a sleep cycle better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — waking between cycles (not in deep sleep) can reduce grogginess."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the ideal sleep duration for adults?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The ideal range is 7-9 hours for most adults, though individual needs vary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use this sleep calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose a wake up time to get bedtimes, or pick a bedtime to get recommended wake up times based on 90-minute cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should a nap be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A power nap of 10–20 minutes can boost alertness; a full sleep cycle nap of ~90 minutes may aid memory and recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sleep latency and why does it matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sleep latency is the time it takes to fall asleep. Accounting for it helps you still wake at the end of a 90-minute cycle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I recover from sleep debt on weekends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some extra sleep can reduce sleep debt, but large schedule shifts can disrupt the circadian rhythm. Consistency is best."
+            }
+          }
+        ]
+      }
+    </script>
   </body>
 </html>

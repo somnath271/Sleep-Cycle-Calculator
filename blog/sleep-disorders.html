@@ -34,6 +34,10 @@
       name="description"
       content="Explore the latest research and treatments for common sleep disorders, including insomnia, sleep apnea, and restless legs syndrome."
     />
+    <meta
+      name="keywords"
+      content="sleep disorders, insomnia, sleep apnea, CPAP, snoring, restless legs syndrome, hypersomnia, parasomnia, narcolepsy, circadian rhythm disorder, cognitive behavioral therapy for insomnia, sleep study, polysomnography, sleep medicine"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -44,6 +48,26 @@
     />
     <link rel="stylesheet" href="../styles.css" />
     <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Understanding Sleep Disorders: Symptoms, Causes, Treatments"
+    />
+    <meta
+      property="og:description"
+      content="Comprehensive guide to insomnia, sleep apnea, RLS, narcolepsy, and more—symptoms, causes, and evidence-based treatments."
+    />
+    <meta
+      property="og:url"
+      content="https://www.remnix.me/blog/sleep-disorders.html"
+    />
+    <meta property="og:image" content="/images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Understanding Sleep Disorders" />
+    <meta
+      name="twitter:description"
+      content="Learn about insomnia, sleep apnea, RLS, and treatments like CBT-I and CPAP."
+    />
+    <meta name="twitter:image" content="/images/og-image.png" />
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
 
     <!-- Structured Data -->
@@ -158,6 +182,15 @@
                   disorders is the first step toward better sleep health.
                 </p>
 
+                <h2>Insomnia: Beyond Sleepless Nights</h2>
+                <p>
+                  <strong>Insomnia</strong> can be acute or chronic and often
+                  involves <strong>sleep latency</strong> issues, frequent
+                  awakenings, or early morning awakenings with
+                  <strong>sleep inertia</strong>. Evidence-based care starts
+                  with <strong>CBT‑I</strong> before considering medications.
+                </p>
+
                 <h2>Common Sleep Disorders</h2>
 
                 <div class="card mb-4">
@@ -179,6 +212,54 @@
                       <li>
                         <strong>Treatment:</strong> Cognitive Behavioral
                         Therapy, sleep hygiene, medication
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="h5">Narcolepsy</h3>
+                    <p>
+                      A neurological disorder affecting the brain’s ability to
+                      regulate sleep-wake cycles.
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Symptoms:</strong> Excessive daytime sleepiness,
+                        cataplexy
+                      </li>
+                      <li>
+                        <strong>Causes:</strong> Loss of hypocretin neurons,
+                        genetic factors
+                      </li>
+                      <li>
+                        <strong>Treatment:</strong> Stimulants, sodium oxybate,
+                        scheduled naps
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h3 class="h5">Parasomnias</h3>
+                    <p>
+                      Unusual behaviors during sleep, like sleepwalking or night
+                      terrors.
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Symptoms:</strong> Complex behaviors during
+                        sleep
+                      </li>
+                      <li>
+                        <strong>Causes:</strong> Stress, medications, sleep
+                        deprivation
+                      </li>
+                      <li>
+                        <strong>Treatment:</strong> Safety measures, addressing
+                        triggers
                       </li>
                     </ul>
                   </div>
@@ -244,6 +325,13 @@
                   <li>Mental health issues</li>
                 </ul>
 
+                <h2>When to Get a Sleep Study</h2>
+                <p>
+                  If you experience loud <strong>snoring</strong>, witnessed
+                  apneas, or persistent daytime sleepiness, ask about a
+                  <strong>polysomnography</strong> or home sleep test.
+                </p>
+
                 <div class="alert alert-warning">
                   <i class="fas fa-exclamation-triangle me-2"></i>
                   <strong>Important:</strong> If you suspect you have a sleep
@@ -283,9 +371,42 @@
 
                 <div class="alert alert-info mt-4">
                   <i class="fas fa-info-circle me-2"></i>
+                  Evaluate your schedule with our
+                  <a href="/calculate-sleep/index.html">sleep calculator</a> and
+                  review
+                  <a href="/learn-about-sleep/sleep-hygiene.html"
+                    >sleep hygiene</a
+                  >
+                  to support treatment plans.
+                </div>
+
+                <div class="alert alert-info mt-4">
+                  <i class="fas fa-info-circle me-2"></i>
                   <strong>Pro Tip:</strong> Use our sleep calculator to help
                   establish a regular sleep schedule, which can be beneficial
                   for managing many sleep disorders.
+                </div>
+                <div class="card mt-5">
+                  <div class="card-body">
+                    <h3 class="h5">Related Articles</h3>
+                    <ul class="mb-0">
+                      <li>
+                        <a href="/blog/science-of-sleep.html"
+                          >The Science of Sleep</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/blog/sleep-hygiene.html"
+                          >Sleep Hygiene Guide</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/learn-about-sleep/sleep-cycles.html"
+                          >Understanding Sleep Cycles</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -324,6 +445,40 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FAQ JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are common symptoms of sleep apnea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Loud snoring, witnessed breathing pauses, gasping for air, morning headaches, and daytime sleepiness."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is CBT-I effective for insomnia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Cognitive Behavioral Therapy for Insomnia is a first-line, evidence-based treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I get a sleep study?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you have loud snoring, witnessed apneas, or persistent daytime sleepiness, ask about a polysomnography or home sleep test."
+            }
+          }
+        ]
+      }
+    </script>
 
     <!-- Animation Script -->
     <script>
