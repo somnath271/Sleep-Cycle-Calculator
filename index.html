@@ -238,15 +238,20 @@
     <!-- Navbar End -->
 
     <!-- Hero Section -->
-    <div class="hero-section position-relative overflow-hidden">
-      <div class="hero-overlay"></div>
-      <div class="container position-relative">
-        <div class="row min-vh-100 align-items-center">
-          <div class="col-lg-8 mx-auto text-center text-white">
-            <h1 class="display-3 fw-bold mb-4 animate-on-scroll">
+    <div
+      class="hero-section position-relative bg-dark text-white d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(56, 65, 184, 0.6); z-index: 1"
+      ></div>
+      <div class="container position-relative z-2">
+        <div class="row align-items-center" style="min-height: 100vh">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="display-3 fw-bold mb-4">
               Sleep Cycle Calculator: Calculate Best Bedtime & Wake Up Time
             </h1>
-            <p class="lead mb-5 animate-on-scroll">
+            <p class="lead mb-5">
               Use REMNIX <strong>sleep cycle calculator</strong> to determine
               your <strong>optimal bedtime</strong> and
               <strong>wake up time</strong> based on
@@ -898,6 +903,18 @@
         lazyImages.forEach((img) => {
           img.src = img.dataset.src;
           img.onload = () => img.classList.add("loaded");
+        });
+
+        window.addEventListener("DOMContentLoaded", function () {
+          window.addEventListener("scroll", function loadAdsOnce() {
+            const script = document.createElement("script");
+            script.src =
+              "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+            script.async = true;
+            script.setAttribute("data-ad-client", "ca-pub-xxxxxx");
+            document.head.appendChild(script);
+            window.removeEventListener("scroll", loadAdsOnce);
+          });
         });
 
         // Add click handlers for hero buttons
