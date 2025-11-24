@@ -239,11 +239,16 @@ footer {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #1a237e, #0d47a1);
-  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 24, 69, 1) 0%,
+    rgba(9, 18, 48, 1) 100%
+  );
+  min-height: 72vh;
   display: flex;
   align-items: center;
   position: relative;
+  color: #fff;
 }
 
 .hero-overlay {
@@ -252,8 +257,11 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../images/sleep-pattern.png") center/cover;
-  opacity: 0.1;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(108, 92, 231, 0.12),
+    rgba(0, 0, 0, 0.35)
+  );
   z-index: 1;
 }
 
@@ -316,6 +324,203 @@ footer {
 .newsletter-form .form-control {
   border: none;
   padding: 1rem;
+}
+
+/* Additional UI refinements for redesigned homepage */
+/* Faster, smoother scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modern button styles */
+.btn-primary {
+  border-radius: 12px;
+  padding: 0.65rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(44, 62, 80, 0.12);
+  background: linear-gradient(90deg, rgb(29, 52, 164) 0%, rgb(80, 0, 201) 100%);
+  border: none;
+  color: #a22929;
+}
+
+.btn-outline-light {
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-radius: 10px;
+  border: 1.5px solid rgba(25, 118, 210, 0.12);
+}
+
+/* Slightly lighter cards */
+.card {
+  border-radius: 14px;
+  background: #fff;
+}
+
+.card .card-body h5,
+.card .card-body h3,
+.card .card-body h2 {
+  color: #1f2d3d;
+}
+
+/* Newsletter gradient */
+.newsletter-form.bg-primary {
+  background: linear-gradient(90deg, rgba(17, 24, 64, 1), rgba(36, 11, 54, 1));
+}
+
+/* Responsive hero adjustments */
+@media (max-width: 992px) {
+  .hero-section {
+    min-height: 62vh;
+    padding: 3rem 0;
+  }
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 140px;
+  }
+}
+
+:root {
+  --remnix-primary: #6c5ce7;
+  --remnix-accent: #0000ce;
+  --remnix-gradient: linear-gradient(
+    90deg,
+    var(--remnix-primary),
+    var(--remnix-accent)
+  );
+  --remnix-surface: #ffffff;
+  --remnix-elev: rgba(20, 22, 48, 0.06);
+}
+
+.hero-section .lead,
+.hero-section .lead.text-muted,
+.hero-section p.lead {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* Gentle overlay tweak */
+.hero-overlay {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(108, 92, 231, 0.14),
+    rgba(0, 0, 0, 0.5)
+  );
+  mix-blend-mode: overlay;
+}
+
+/* Button polish */
+.btn-primary {
+  background: var(--remnix-gradient) !important;
+  border: none;
+  color: #ffffff !important;
+  box-shadow: 0 8px 28px var(--remnix-elev);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.btn-primary:focus {
+  outline: 3px solid rgba(108, 92, 231, 0.18);
+  outline-offset: 3px;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(143, 144, 165, 0.12);
+}
+
+.card {
+  background: var(--remnix-surface);
+  border-radius: 14px;
+  transition: transform 260ms cubic-bezier(0.2, 0.9, 0.3, 1), box-shadow 260ms;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.005);
+  box-shadow: 0 24px 48px rgba(16, 20, 40, 0.08);
+}
+
+/* Image micro-motion */
+.image-wrapper img {
+  transform-origin: center center;
+  will-change: transform;
+}
+
+@keyframes float-subtle {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.image-wrapper:hover img {
+  animation: float-subtle 5s ease-in-out infinite;
+}
+
+/* Faster scroll reveal for better perceived speed */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 420ms cubic-bezier(0.22, 0.9, 0.2, 1), transform 420ms;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Newsletter CTA refinement */
+.newsletter-card {
+  background: linear-gradient(
+    90deg,
+    rgba(108, 92, 231, 0.95),
+    rgba(84, 0, 201, 0.95)
+  );
+  color: #fff;
+}
+.newsletter-card .form-control {
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+}
+.newsletter-card .btn {
+  border-radius: 999px;
+}
+
+/* Focus states for accessibility */
+a:focus,
+button:focus,
+input:focus {
+  outline-offset: 3px;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .image-wrapper:hover img,
+  .card:hover,
+  .btn-primary:hover,
+  .animate-on-scroll {
+    all: unset;
+  }
+}
+
+/* Small utilities */
+.muted-light {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .newsletter-form .btn {
