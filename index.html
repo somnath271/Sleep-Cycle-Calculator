@@ -233,119 +233,243 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <div
-      class="hero-section position-relative bg-dark text-white d-flex align-items-center justify-content-center"
-    >
+    <!-- Redesigned Homepage Body (Hero → Expert Tips) -->
+    <header class="hero-section text-white">
       <div
-        class="position-absolute top-0 start-0 w-100 h-100"
-        style="background: rgba(56, 65, 184, 0.6); z-index: 1"
+        class="hero-overlay position-absolute start-0 top-0 w-100 h-100"
+        aria-hidden="true"
       ></div>
-      <div class="container position-relative z-2">
-        <div class="row align-items-center" style="min-height: 100vh">
-          <div class="col-lg-8 mx-auto text-center">
-            <h1 class="display-3 fw-bold mb-4">
-              Sleep Cycle Calculator: Calculate Best Bedtime & Wake Up Time
+      <div class="container position-relative">
+        <div class="row align-items-center py-6" style="min-height: 72vh">
+          <div class="col-lg-6 animate-on-scroll">
+            <h1 class="display-5 fw-bold mb-3">
+              Find the Best Time to Sleep and Wake Up — Based on 90-minute
+              Cycles
             </h1>
-            <p class="lead mb-5">
-              Use REMNIX <strong>sleep cycle calculator</strong> to determine
-              your <strong>optimal bedtime</strong> and
-              <strong>wake up time</strong> based on
-              <strong>90-minute sleep cycles</strong>. Plan your
-              <strong>sleep schedule</strong> to wake up refreshed, avoid
-              <strong>sleep inertia</strong>, and improve
-              <strong>sleep quality</strong> naturally.
+            <p class="lead mb-4 text-muted">
+              REMNIX helps you plan bedtime and wake times using sleep-cycle
+              science so you wake up refreshed, reduce sleep inertia, and feel
+              more productive.
             </p>
-            <div class="d-flex justify-content-center gap-3 animate-on-scroll">
+            <div class="d-flex flex-wrap gap-3 animate-on-scroll">
               <a
                 href="./calculate-sleep/"
                 class="btn btn-primary btn-lg px-4 py-3"
                 role="button"
+                ><i class="fas fa-calculator me-2"></i>Calculate Schedule</a
               >
-                <i class="fas fa-calculator me-2"></i>Calculate Sleep Schedule
-              </a>
               <a
                 href="./learn-about-sleep/"
                 class="btn btn-outline-light btn-lg px-4 py-3"
                 role="button"
+                ><i class="fas fa-book me-2"></i>Learn About Sleep</a
               >
-                <i class="fas fa-book me-2"></i>Learn More
-              </a>
+            </div>
+            <ul class="list-inline mt-4 text-white small">
+              <li class="list-inline-item">
+                ✓ Science-backed 90-minute cycles
+              </li>
+              <li class="list-inline-item">✓ Quick & mobile-friendly</li>
+              <li class="list-inline-item">✓ No sign-up required</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 text-center animate-on-scroll d-none d-lg-block">
+            <div
+              class="image-wrapper rounded shadow-lg overflow-hidden mx-auto"
+              style="max-width: 520px"
+            >
+              <img
+                src="/images/bed.png"
+                alt="REMNIX Sleep Cycle Graph"
+                class="img-fluid"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <!-- Features Section -->
+    <!-- Highlights -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5 animate-on-scroll">
-          Why Sleep Cycles Matter for Better Sleep Quality
+        <div class="row g-4 text-center">
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 bg-white p-3">
+              <div class="card-body">
+                <i
+                  class="fas fa-brain fa-2x text-primary mb-3"
+                  aria-hidden="true"
+                ></i>
+                <h3 class="h5">Sharper Focus & Memory</h3>
+                <p class="mb-0 text-muted">
+                  Complete cycles improve cognition and daytime performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 bg-white p-3">
+              <div class="card-body">
+                <i
+                  class="fas fa-heartbeat fa-2x text-primary mb-3"
+                  aria-hidden="true"
+                ></i>
+                <h3 class="h5">Better Health</h3>
+                <p class="mb-0 text-muted">
+                  Sleep timing supports recovery, immunity and heart health.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 bg-white p-3">
+              <div class="card-body">
+                <i
+                  class="fas fa-battery-full fa-2x text-primary mb-3"
+                  aria-hidden="true"
+                ></i>
+                <h3 class="h5">Wake Up Energized</h3>
+                <p class="mb-0 text-muted">
+                  Wake at the end of a cycle to reduce grogginess.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- In-Depth Guide (SEO content) -->
+    <section class="py-5">
+      <div class="container article-content">
+        <h2 class="text-center mb-3 animate-on-scroll">
+          In-Depth Guide to Sleep Cycles & Better Rest
         </h2>
-        <div class="row g-4">
+        <p class="lead text-muted text-center animate-on-scroll">
+          Understanding sleep cycles is the first step to better sleep. This
+          short guide explains how cycles work, practical tips to improve sleep
+          quality, and how to use REMNIX to pick the best sleep schedule for
+          your life.
+        </p>
+
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 animate-on-scroll">
+            <article>
+              <h3 class="h5">What Are Sleep Cycles?</h3>
+              <p class="text-muted">
+                A typical sleep cycle lasts about 90 minutes and includes light
+                sleep, deep (slow-wave) sleep, and REM sleep. Completing full
+                cycles helps memory consolidation, emotional regulation, and
+                physical recovery.
+              </p>
+              <p class="text-muted">
+                Optimizing the timing of your sleep (bedtime and wake time) so
+                you wake at the end of a cycle reduces grogginess and improves
+                daytime alertness.
+              </p>
+            </article>
+          </div>
+          <div class="col-md-6 animate-on-scroll">
+            <article>
+              <h3 class="h5">How to Use This Calculator</h3>
+              <ol class="text-muted">
+                <li>
+                  Choose either a desired wake time or how much sleep you want.
+                </li>
+                <li>
+                  We calculate multiple bedtimes that align with full 90-minute
+                  cycles.
+                </li>
+                <li>
+                  Pick a bedtime that fits your routine — earlier is usually
+                  better for consistent sleep health.
+                </li>
+              </ol>
+              <p class="text-muted">
+                Tip: Allow ~14 minutes for typical sleep latency (time it takes
+                to fall asleep) when planning your bedtime.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
           <div class="col-md-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
-              <img
-                src="/images/brain.png"
-                class="card-img-top"
-                loading="lazy"
-                alt="Better Brain Function with Complete Sleep Cycles for Optimal Cognitive Performance"
-              />
-              <div class="card-body text-center p-4">
-                <div class="icon-wrapper mb-4">
-                  <i class="fas fa-brain fa-3x text-primary"></i>
-                </div>
-                <h3 class="card-title h4">
-                  Better Brain Function with Complete Sleep Cycles
-                </h3>
-                <p class="card-text">
-                  Complete sleep cycles enhance memory, focus, and cognitive
-                  performance throughout the day.
-                </p>
-              </div>
+            <div class="card p-3">
+              <h4 class="h6">Quick UX Tips</h4>
+              <ul class="text-muted small">
+                <li>Use dim lighting before bed.</li>
+                <li>Avoid caffeine late in the day.</li>
+                <li>Keep a consistent wake-up time.</li>
+              </ul>
             </div>
           </div>
           <div class="col-md-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
-              <img
-                src="/images/health.png"
-                class="card-img-top"
-                loading="lazy"
-                alt="Improved Health and Wellness by Following Proper Sleep Cycles"
-              />
-              <div class="card-body text-center p-4">
-                <div class="icon-wrapper mb-4">
-                  <i class="fas fa-heartbeat fa-3x text-primary"></i>
-                </div>
-                <h3 class="card-title h4">
-                  Improved Health by Following Sleep Cycles
-                </h3>
-                <p class="card-text">
-                  Proper sleep cycles support immune function, heart health, and
-                  overall well-being.
-                </p>
-              </div>
+            <div class="card p-3">
+              <h4 class="h6">Who benefits most?</h4>
+              <p class="text-muted small mb-0">
+                Shift workers, students, and anyone with irregular sleep
+                schedules can use cycle-aware timing to improve daytime
+                function.
+              </p>
             </div>
           </div>
           <div class="col-md-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
+            <div class="card p-3">
+              <h4 class="h6">Further Reading</h4>
+              <p class="small">
+                <a href="/blog/science-of-sleep.html">Science of Sleep</a> •
+                <a href="/blog/sleep-hygiene.html">Sleep Hygiene</a> •
+                <a href="/blog/sleep-disorders.html">Sleep Disorders</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 animate-on-scroll">
+            <h2 class="h3 mb-3">How REMNIX Works</h2>
+            <p class="text-muted">
+              We calculate optimal times by counting full 90-minute sleep cycles
+              and factoring sleep latency so you can pick bedtimes or wake times
+              that align with natural sleep stages.
+            </p>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Choose a
+                wake time or desired sleep length
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>See
+                suggested bedtimes for full cycles
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-check-circle text-success me-2"></i>Use results
+                to plan naps and night sleep
+              </li>
+            </ul>
+            <a href="/calculate-sleep/" class="btn btn-primary mt-3"
+              >Try the Calculator</a
+            >
+          </div>
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="card border-0 shadow-sm">
               <img
                 src="/images/energized.png"
                 class="card-img-top"
+                alt="Sleep cycles illustration"
                 loading="lazy"
-                alt="REMNIX Sleep Cycle Graph showing 90-minute sleep cycles"
               />
-              <div class="card-body text-center p-4">
-                <div class="icon-wrapper mb-4">
-                  <i class="fas fa-battery-full fa-3x text-primary"></i>
-                </div>
-                <h3 class="card-title h4">
-                  Wake Up Refreshed and Energized with Sleep Cycles
-                </h3>
-                <p class="card-text">
-                  Wake up at the right time in your sleep cycle to feel
-                  refreshed and energized.
+              <div class="card-body">
+                <p class="mb-0 text-muted">
+                  Visual guide to sleep cycles and when to wake for the least
+                  grogginess.
                 </p>
               </div>
             </div>
@@ -354,187 +478,72 @@
       </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5 animate-on-scroll">
-          How the REMNIX Sleep Cycle Calculator Helps You Sleep Better
-        </h2>
-        <div class="row align-items-center">
-          <div class="col-lg-6 animate-on-scroll">
-            <div class="image-wrapper rounded shadow-lg overflow-hidden">
-              <img
-                src="/images/bed.png"
-                class="img-fluid"
-                loading="lazy"
-                alt="REMNIX Sleep Cycle Graph showing 90-minute Sleep Cycles for Best Bedtime and Wake Up Time"
-              />
-            </div>
-          </div>
-          <div class="col-lg-6 animate-on-scroll">
-            <div class="ps-lg-4">
-              <h3 class="h2 mb-4">
-                Understanding Sleep Cycles with Our Sleep Calculator
-              </h3>
-              <p class="lead mb-4">
-                Our calculator uses the science of sleep cycles to determine the
-                best times for you to go to bed or wake up. Each sleep cycle
-                lasts about 90 minutes, and waking up at the end of a cycle
-                helps you feel more refreshed.
-              </p>
-              <ul class="list-unstyled">
-                <li class="mb-3 d-flex align-items-center">
-                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
-                  <span>Calculate based on your desired wake-up time</span>
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
-                  <span>Find optimal bedtimes for complete cycles</span>
-                </li>
-                <li class="mb-3 d-flex align-items-center">
-                  <i class="fas fa-check-circle text-success fa-2x me-3"></i>
-                  <span>Get personalized recommendations</span>
-                </li>
-              </ul>
-              <a href="/calculate-sleep/" class="btn btn-primary btn-lg mt-4">
-                <i class="fas fa-calculator me-2"></i>Use Sleep Cycle Calculator
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Compares & Benefits -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-6 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body p-4">
-                <h2 class="h3 mb-3">
-                  How REMNIX Sleep Cycle Calculator Compares to Others
-                </h2>
-                <p>
-                  Unlike a generic sleep chart or basic sleep tracker, REMNIX
-                  uses 90-minute <strong>sleep cycle</strong> modeling to
-                  suggest precise <strong>bedtimes</strong> and
-                  <strong>wake up times</strong>. Options across cycles account
-                  for <strong>sleep latency</strong> so you can wake between
-                  cycles and reduce <strong>sleep inertia</strong>.
-                </p>
-                <ul class="mb-0">
-                  <li>Cycle-aware recommendations (not one-size-fits-all)</li>
-                  <li>
-                    Focus on <strong>REM</strong> and
-                    <strong>deep sleep</strong> timing
-                  </li>
-                  <li>
-                    Built-in guidance on <strong>circadian rhythm</strong> and
-                    <strong>sleep hygiene</strong>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="card-body p-4">
-                <h2 class="h3 mb-3">
-                  Benefits of Using a Sleep Cycle Calculator for Better Sleep
-                </h2>
-                <ul>
-                  <li>Wake up feeling more refreshed and alert</li>
-                  <li>Build a consistent <strong>sleep schedule</strong></li>
-                  <li>
-                    Time <strong>power naps</strong> and full-cycle naps
-                    effectively
-                  </li>
-                  <li>
-                    Improve <strong>sleep quality</strong> with better timing
-                    habits
-                  </li>
-                  <li>Support performance, mood, memory, and recovery</li>
-                </ul>
-                <a href="/calculate-sleep/" class="btn btn-primary">
-                  Try the Sleep Calculator
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest Articles Section -->
+    <!-- Articles -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5 animate-on-scroll">
-          Latest Sleep Insights and Tips from REMNIX Sleep Calculator
+        <h2 class="text-center mb-4 animate-on-scroll">
+          Latest from the REMNIX Blog
         </h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
+            <div class="card h-100">
               <img
                 src="/images/brain.png"
                 class="card-img-top"
+                alt="The Science of Sleep"
                 loading="lazy"
-                alt="Better Brain Function with Complete Sleep Cycles for Optimal Cognitive Performance"
               />
-              <div class="card-body p-4">
-                <h3 class="card-title h4">The Science of Sleep</h3>
-                <p class="card-text">
-                  Explore the latest research and discoveries about sleep cycles
-                  and their impact on health.
+              <div class="card-body">
+                <h3 class="h5">The Science of Sleep</h3>
+                <p class="text-muted">
+                  Research-backed explanations of sleep stages and cycles.
                 </p>
                 <a
                   href="/blog/science-of-sleep.html"
                   class="btn btn-outline-primary"
-                  >Read More</a
+                  >Read</a
                 >
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
+            <div class="card h-100">
               <img
                 src="/images/health.png"
                 class="card-img-top"
+                alt="Understanding Sleep Disorders"
                 loading="lazy"
-                alt="Improved Health and Wellness by Following Proper Sleep Cycles"
               />
-              <div class="card-body p-4">
-                <h3 class="card-title h4">Understanding Sleep Disorders</h3>
-                <p class="card-text">
-                  Learn about common sleep disorders and the latest treatment
-                  options available.
+              <div class="card-body">
+                <h3 class="h5">Understanding Sleep Disorders</h3>
+                <p class="text-muted">
+                  Learn about common issues and how to address them.
                 </p>
                 <a
                   href="/blog/sleep-disorders.html"
                   class="btn btn-outline-primary"
-                  >Read More</a
+                  >Read</a
                 >
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm hover-shadow">
+            <div class="card h-100">
               <img
                 src="/images/energized.png"
                 class="card-img-top"
+                alt="Sleep Hygiene Guide"
                 loading="lazy"
-                alt="Sleep Hygiene Guide for Creating the Perfect Sleep Environment"
               />
-              <div class="card-body p-4">
-                <h3 class="card-title h4">Sleep Hygiene Guide</h3>
-                <p class="card-text">
-                  Discover practical tips and best practices for creating the
-                  perfect sleep environment.
+              <div class="card-body">
+                <h3 class="h5">Sleep Hygiene Guide</h3>
+                <p class="text-muted">
+                  Practical tips to create the best sleep environment.
                 </p>
                 <a
                   href="/blog/sleep-hygiene.html"
                   class="btn btn-outline-primary"
-                  >Read More</a
+                  >Read</a
                 >
               </div>
             </div>
@@ -543,31 +552,43 @@
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section
-      class="py-5 bg-primary text-white position-relative overflow-hidden"
-    >
-      <div class="container position-relative">
+    <!-- Newsletter -->
+    <section class="py-5">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 text-center animate-on-scroll">
-            <h2 class="display-5 fw-bold mb-4">
-              Stay Updated with Sleep Science
-            </h2>
-            <p class="lead mb-4">
-              Subscribe to our newsletter for the latest sleep research, tips,
-              and insights.
-            </p>
-            <form class="newsletter-form">
-              <div class="input-group input-group-lg mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter your email"
-                  required
-                />
-                <button class="btn btn-light" type="submit">Subscribe</button>
+          <div class="col-lg-8 animate-on-scroll">
+            <div
+              class="newsletter-card p-4 rounded shadow-sm bg-primary text-white"
+            >
+              <div class="d-md-flex align-items-center justify-content-between">
+                <div>
+                  <h3 class="h5 fw-bold mb-1">Get Sleep Tips & Research</h3>
+                  <p class="mb-0 small text-white-50">
+                    Join our free newsletter — actionable tips delivered
+                    monthly.
+                  </p>
+                </div>
+                <form
+                  class="newsletter-form ms-md-4 mt-3 mt-md-0"
+                  aria-label="Subscribe to newsletter"
+                >
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control rounded-pill"
+                      placeholder="you@example.com"
+                      required
+                    />
+                    <button
+                      class="btn btn-light rounded-pill ms-2"
+                      type="submit"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
@@ -577,7 +598,7 @@
     <section class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-5 animate-on-scroll">
-          Frequently Asked Questions about Sleep Cycles & Sleep Calculator
+          Frequently Asked Questions
         </h2>
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -602,12 +623,10 @@
                     A <strong>sleep cycle</strong> is a period of sleep lasting
                     about 90 minutes, including light sleep, deep sleep, and REM
                     sleep stages. Completing full sleep cycles helps you wake up
-                    refreshed, improves memory, focus, and overall
-                    <strong>sleep quality</strong>.
+                    refreshed and improves cognitive function.
                   </div>
                 </div>
               </div>
-
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -625,15 +644,11 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Most adults need 4-6 complete
-                    <strong>sleep cycles</strong> per night, which equals 6-9
-                    hours of sleep. Using our
-                    <strong>sleep cycle calculator</strong>, you can find the
-                    ideal bedtime and wake-up time for your needs.
+                    Most adults need 4–6 full cycles (roughly 6–9 hours). Use
+                    the REMNIX calculator to find times that match full cycles.
                   </div>
                 </div>
               </div>
-
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -651,15 +666,12 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    The best time to wake up is at the end of a
-                    <strong>sleep cycle</strong> when you're in light sleep. Our
-                    REMNIX calculator shows
-                    <strong>optimal wake-up times</strong> to help you feel
-                    energized and avoid <strong>sleep inertia</strong>.
+                    The best time to wake is at the end of a sleep cycle, when
+                    you are in light sleep rather than deep sleep — this reduces
+                    grogginess.
                   </div>
                 </div>
               </div>
-
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -677,17 +689,12 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Use our
-                    <strong>
-                      <a href="./calculate-sleep/">bedtime calculator</a>
-                    </strong>
-                    to find the best sleep times. For a 6 AM wake-up, ideal
-                    bedtimes are 9:30 PM, 11:00 PM, or 12:30 AM, based on full
-                    90-minute <strong>sleep cycles</strong>.
+                    Use the <a href="./calculate-sleep/">bedtime calculator</a>.
+                    Typical options for 6 AM are 9:30 PM, 11:00 PM, or 12:30 AM
+                    depending on cycles and sleep latency.
                   </div>
                 </div>
               </div>
-
               <div class="accordion-item">
                 <h3 class="accordion-header">
                   <button
@@ -705,10 +712,8 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Yes! Short <strong>power naps</strong> (20-30 minutes) or
-                    full 90-minute cycles can boost energy and alertness without
-                    disturbing your night sleep. Our
-                    <strong>nap calculator</strong> helps you plan them
+                    Yes — short power naps (~20 minutes) or full 90-minute naps
+                    can boost alertness. Our nap recommendations help you plan
                     effectively.
                   </div>
                 </div>
@@ -719,86 +724,40 @@
       </div>
     </section>
 
-    <!-- Expert Advice Section -->
+    <!-- Expert Tips -->
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-5 animate-on-scroll">
-          Expert <a href="learn-about-sleep/">Sleep Tips</a> to Optimize Your
-          Sleep Cycle
-        </h2>
+        <h2 class="text-center mb-4 animate-on-scroll">Expert Sleep Tips</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
-                <h3 class="h5 card-title">Consistent Sleep Schedule</h3>
-                <p class="card-text">
-                  Maintain a regular sleep schedule, even on weekends, to
-                  regulate your body's internal clock.
+                <h3 class="h6">Keep a Consistent Schedule</h3>
+                <p class="text-muted small mb-0">
+                  Go to bed and wake at similar times daily to stabilize your
+                  circadian rhythm.
                 </p>
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Go to bed at
-                    the same time each night
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Wake up at the
-                    same time each morning
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Avoid large
-                    variations in sleep times
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
-                <h3 class="h5 card-title">Sleep Environment</h3>
-                <p class="card-text">
-                  Create an optimal sleep environment to promote better sleep
-                  quality.
+                <h3 class="h6">Optimize Your Bedroom</h3>
+                <p class="text-muted small mb-0">
+                  Keep it cool, dark, and quiet; limit screens before bed.
                 </p>
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Keep your
-                    bedroom cool and dark
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Use
-                    comfortable bedding
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Minimize noise
-                    and distractions
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 animate-on-scroll">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
-                <h3 class="h5 card-title">Pre-Sleep Routine</h3>
-                <p class="card-text">
-                  Develop a relaxing pre-sleep routine to signal your body it's
-                  time to sleep.
+                <h3 class="h6">Relax Before Sleep</h3>
+                <p class="text-muted small mb-0">
+                  Try breathing, light stretching or a short reading routine to
+                  unwind.
                 </p>
-                <ul class="list-unstyled">
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Avoid screens
-                    before bed
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Practice
-                    relaxation techniques
-                  </li>
-                  <li>
-                    <i class="fas fa-check text-success me-2"></i>Limit caffeine
-                    and heavy meals
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -902,7 +861,7 @@
             script.src =
               "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
             script.async = true;
-            script.setAttribute("data-ad-client", "ca-pub-xxxxxx");
+            script.setAttribute("data-ad-client", "ca-pub-4073514999710567");
             document.head.appendChild(script);
             window.removeEventListener("scroll", loadAdsOnce);
           });
