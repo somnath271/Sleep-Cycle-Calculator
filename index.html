@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
-      Sleep Cycle Calculator | Best Bedtime & Wake Up Time Tool | Remnix
+      Sleep Cycle Calculator (90-Minutes Cycles) - Find Your Perfect Bedtime
     </title>
     <meta
       name="description"
-      content="Use Remnix Sleep Cycle Calculator to find your best bedtime and wake-up time. Based on scientific 90-minute sleep cycles for better sleep quality and productivity."
+      content="Free sleep cycle calculator using 90-minute sleep cycles. Instantly find the best bedtime or wake-up time to wake refreshed and energized."
     />
     <meta name="author" content="Somnath Bhattarai" />
     <meta name="robots" content="index, follow" />
@@ -80,7 +80,7 @@
           },
           {
             "@type": "Question",
-            "name": "How many sleep cycles do I need?",
+            "name": "How many sleep cycles do I need each night?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Most adults need 4-6 complete sleep cycles per night, which translates to 6-9 hours of sleep. The exact number depends on your individual needs and lifestyle."
@@ -92,6 +92,38 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "The best time to wake up is at the end of a sleep cycle, when you're in light sleep. Our calculator helps you determine the optimal wake-up time based on your sleep cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many hours of sleep is 11 PM to 7 AM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "11 PM to 7 AM equals 5 full 90-minute sleep cycles, totaling 8 hours of sleep."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles are in 7 hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7 hours of sleep includes approximately 4-5 full 90-minute sleep cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time should I go to bed if I wake up at 6 AM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a 6 AM wake-up, optimal bedtimes are approximately 9:30 PM, 11:00 PM, or 12:30 AM, based on 90-minute sleep cycles and 14 minutes average sleep latency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I take a nap and still wake refreshed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Short power naps (~20 minutes) improve alertness, while full 90-minute naps allow a complete sleep cycle, minimizing grogginess."
             }
           }
         ]
@@ -254,8 +286,8 @@
         <div class="row align-items-center py-6" style="min-height: 72vh">
           <div class="col-lg-6 animate">
             <h1 class="display-5 fw-bold mb-3">
-              Find the Best Time to Sleep and Wake Up — Based on 90-minute
-              Cycles
+              Sleep Cycle Calculator — Instantly Find Your Best Bedtime &
+              Wake-Up Time
             </h1>
             <p class="lead mb-4 text-muted">
               REMNIX helps you plan bedtime and wake times using sleep-cycle
@@ -267,7 +299,8 @@
                 href="./calculate-sleep/"
                 class="btn btn-primary btn-lg px-4 py-3"
                 role="button"
-                ><i class="fas fa-calculator me-2"></i>Calculate Schedule</a
+                ><i class="fas fa-calculator me-2"></i>Calculate Your Sleep
+                Schedule</a
               >
               <a
                 href="./learn-about-sleep/"
@@ -471,7 +504,7 @@
               >Try the Calculator</a
             >
           </div>
-          <div class="col-lg-6 ">
+          <div class="col-lg-6">
             <div class="card border-0 shadow-sm">
               <img
                 src="/images/energized.webp"
@@ -739,6 +772,51 @@
                   </div>
                 </div>
               </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    How many hours of sleep is 11 PM to 7 AM?
+                  </button>
+                </h3>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Sleeping from 11:00 PM to 7:00 AM gives you
+                    <strong>8 hours of sleep</strong>, which equals about
+                    <strong>5 full 90-minute sleep cycles</strong>.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                  >
+                    How many sleep cycles in 7 hours?
+                  </button>
+                </h3>
+                <div
+                  id="faq7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    7 hours ≈ 4-5 full 90-minute cycles. For optimal rest, aim
+                    for 6-9 hours (4-6 cycles) nightly.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -856,9 +934,7 @@
     <!-- Animation + Lazy Ads Script -->
     <script defer>
       document.addEventListener("DOMContentLoaded", function () {
-        const elements = document.querySelectorAll(
-          ".hero-section .animate, section h2.animate"
-        );
+        const elements = document.querySelectorAll(".animate");
 
         const observer = new IntersectionObserver(
           (entries) => {
