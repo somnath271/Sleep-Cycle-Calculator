@@ -41,7 +41,13 @@
       name="twitter:image"
       content="https://www.remnix.me/images/og-image.png"
     />
-
+    <link
+      rel="preload"
+      href="/roboto.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
       {
@@ -105,13 +111,6 @@
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
     <link rel="icon" href="/images/remnix_favicon.ico" type="image/x-icon" />
 
-    <!-- Google Adsense -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073514999710567"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Google Analytics -->
     <script
       async
@@ -145,19 +144,19 @@
       .btn {
         transition: all 0.3s ease;
       }
-      .animate-on-scroll {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
+      .animate {
+        opacity: 1; /* visible by default */
       }
-      .animate-on-scroll.visible {
+
+      .animate.visible {
         opacity: 1;
         transform: translateY(0);
+        transition: opacity 0.6s ease, transform 0.6s ease;
       }
       @font-face {
         font-family: "Roboto";
-        src: url("roboto.woff2") format("woff2");
-        font-display: optional;
+        src: url("/roboto.woff2") format("woff2");
+        font-display: swap;
       }
     </style>
     <!-- Stylesheets -->
@@ -241,7 +240,7 @@
       ></div>
       <div class="container position-relative">
         <div class="row align-items-center py-6" style="min-height: 72vh">
-          <div class="col-lg-6 animate-on-scroll">
+          <div class="col-lg-6 animate">
             <h1 class="display-5 fw-bold mb-3">
               Find the Best Time to Sleep and Wake Up — Based on 90-minute
               Cycles
@@ -251,7 +250,7 @@
               science so you wake up refreshed, reduce sleep inertia, and feel
               more productive.
             </p>
-            <div class="d-flex flex-wrap gap-3 animate-on-scroll">
+            <div class="d-flex flex-wrap gap-3 animate">
               <a
                 href="./calculate-sleep/"
                 class="btn btn-primary btn-lg px-4 py-3"
@@ -273,16 +272,18 @@
               <li class="list-inline-item">✓ No sign-up required</li>
             </ul>
           </div>
-          <div class="col-lg-6 text-center animate-on-scroll d-none d-lg-block">
+          <div class="col-lg-6 text-center animate d-none d-lg-block">
             <div
               class="image-wrapper rounded shadow-lg overflow-hidden mx-auto"
               style="max-width: 520px"
             >
               <img
-                src="/images/bed.png"
+                src="/images/bed.webp"
                 alt="REMNIX Sleep Cycle Graph"
                 class="img-fluid"
-                loading="lazy"
+                width="520"
+                height="400"
+                fetchpriority="high"
               />
             </div>
           </div>
@@ -294,7 +295,7 @@
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row g-4 text-center">
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card h-100 border-0 bg-white p-3">
               <div class="card-body">
                 <i
@@ -308,7 +309,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card h-100 border-0 bg-white p-3">
               <div class="card-body">
                 <i
@@ -322,7 +323,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card h-100 border-0 bg-white p-3">
               <div class="card-body">
                 <i
@@ -343,10 +344,10 @@
     <!-- In-Depth Guide (SEO content) -->
     <section class="py-5">
       <div class="container article-content">
-        <h2 class="text-center mb-3 animate-on-scroll">
+        <h2 class="text-center mb-3 animate">
           In-Depth Guide to Sleep Cycles & Better Rest
         </h2>
-        <p class="lead text-muted text-center animate-on-scroll">
+        <p class="lead text-muted text-center animate">
           Understanding sleep cycles is the first step to better sleep. This
           short guide explains how cycles work, practical tips to improve sleep
           quality, and how to use REMNIX to pick the best sleep schedule for
@@ -354,7 +355,7 @@
         </p>
 
         <div class="row g-4 mt-4">
-          <div class="col-md-6 animate-on-scroll">
+          <div class="col-md-6 animate">
             <article>
               <h3 class="h5">What Are Sleep Cycles?</h3>
               <p class="text-muted">
@@ -370,7 +371,7 @@
               </p>
             </article>
           </div>
-          <div class="col-md-6 animate-on-scroll">
+          <div class="col-md-6 animate">
             <article>
               <h3 class="h5">How to Use This Calculator</h3>
               <ol class="text-muted">
@@ -395,7 +396,7 @@
         </div>
 
         <div class="row g-4 mt-4">
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card p-3">
               <h4 class="h6">Quick UX Tips</h4>
               <ul class="text-muted small">
@@ -405,7 +406,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card p-3">
               <h4 class="h6">Who benefits most?</h4>
               <p class="text-muted small mb-0">
@@ -415,7 +416,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 animate-on-scroll">
+          <div class="col-md-4 animate">
             <div class="card p-3">
               <h4 class="h6">Further Reading</h4>
               <p class="small">
@@ -433,7 +434,7 @@
     <section class="py-5">
       <div class="container">
         <div class="row align-items-center g-4">
-          <div class="col-lg-6 animate-on-scroll">
+          <div class="col-lg-6 animate">
             <h2 class="h3 mb-3">How REMNIX Works</h2>
             <p class="text-muted">
               We calculate optimal times by counting full 90-minute sleep cycles
@@ -458,7 +459,7 @@
               >Try the Calculator</a
             >
           </div>
-          <div class="col-lg-6 animate-on-scroll">
+          <div class="col-lg-6 animate">
             <div class="card border-0 shadow-sm">
               <img
                 src="/images/energized.png"
@@ -481,17 +482,18 @@
     <!-- Articles -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-4 animate-on-scroll">
-          Latest from the REMNIX Blog
-        </h2>
+        <h2 class="text-center mb-4 animate">Latest from the REMNIX Blog</h2>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100">
               <img
-                src="/images/brain.png"
-                class="card-img-top"
+                src="/images/brain.webp"
                 alt="The Science of Sleep"
+                class="img-fluid"
+                width="400"
+                height="260"
                 loading="lazy"
+                decoding="async"
               />
               <div class="card-body">
                 <h3 class="h5">The Science of Sleep</h3>
@@ -506,13 +508,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100">
               <img
-                src="/images/health.png"
-                class="card-img-top"
+                src="/images/health.webp"
                 alt="Understanding Sleep Disorders"
+                class="card-img-top"
+                width="400"
+                height="260"
                 loading="lazy"
+                decoding="async"
               />
               <div class="card-body">
                 <h3 class="h5">Understanding Sleep Disorders</h3>
@@ -527,13 +532,16 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100">
               <img
-                src="/images/energized.png"
-                class="card-img-top"
+                src="/images/energized.webp"
                 alt="Sleep Hygiene Guide"
+                class="card-img-top"
+                width="400"
+                height="260"
                 loading="lazy"
+                decoding="async"
               />
               <div class="card-body">
                 <h3 class="h5">Sleep Hygiene Guide</h3>
@@ -556,7 +564,7 @@
     <section class="py-5">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 animate-on-scroll">
+          <div class="col-lg-8 animate">
             <div
               class="newsletter-card p-4 rounded shadow-sm bg-primary text-white"
             >
@@ -597,9 +605,7 @@
     <!-- FAQ Section -->
     <section class="py-5 bg-light">
       <div class="container">
-        <h2 class="text-center mb-5 animate-on-scroll">
-          Frequently Asked Questions
-        </h2>
+        <h2 class="text-center mb-5 animate">Frequently Asked Questions</h2>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="accordion" id="faqAccordion">
@@ -727,9 +733,9 @@
     <!-- Expert Tips -->
     <section class="py-5">
       <div class="container">
-        <h2 class="text-center mb-4 animate-on-scroll">Expert Sleep Tips</h2>
+        <h2 class="text-center mb-4 animate">Expert Sleep Tips</h2>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
                 <h3 class="h6">Keep a Consistent Schedule</h3>
@@ -740,7 +746,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
                 <h3 class="h6">Optimize Your Bedroom</h3>
@@ -750,7 +756,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 animate-on-scroll">
+          <div class="col-md-6 col-lg-4 animate">
             <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
                 <h3 class="h6">Relax Before Sleep</h3>
@@ -832,52 +838,45 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
 
-    <!-- Animation Script -->
+    <!-- Animation + Lazy Ads Script -->
     <script defer>
       document.addEventListener("DOMContentLoaded", function () {
-        // Animation observer
-        const elements = document.querySelectorAll(".animate-on-scroll");
+        const elements = document.querySelectorAll(
+          ".hero-section .animate, section h2.animate"
+        );
+
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
               if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
               }
             });
           },
-          { threshold: 0.1 }
+          { threshold: 0.2 }
         );
-        elements.forEach((element) => observer.observe(element));
 
-        const lazyImages = document.querySelectorAll("img.lazy");
-        lazyImages.forEach((img) => {
-          img.src = img.dataset.src;
-          img.onload = () => img.classList.add("loaded");
-        });
+        elements.forEach((el) => observer.observe(el));
 
-        window.addEventListener("DOMContentLoaded", function () {
-          window.addEventListener("scroll", function loadAdsOnce() {
-            const script = document.createElement("script");
-            script.src =
-              "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-            script.async = true;
-            script.setAttribute("data-ad-client", "ca-pub-4073514999710567");
-            document.head.appendChild(script);
-            window.removeEventListener("scroll", loadAdsOnce);
-          });
-        });
+        let adsLoaded = false;
 
-        // Add click handlers for hero buttons
-        const heroButtons = document.querySelectorAll(".hero-section .btn");
-        heroButtons.forEach((button) => {
-          button.addEventListener("click", function (e) {
-            console.log("Button clicked:", this.href);
-            // Allow default navigation
-            return true;
-          });
-        });
+        function loadAdsense() {
+          if (adsLoaded) return;
+          adsLoaded = true;
 
-        // Newsletter form submission
+          const script = document.createElement("script");
+          script.src =
+            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+          script.async = true;
+          script.setAttribute("data-ad-client", "ca-pub-4073514999710567");
+          document.head.appendChild(script);
+
+          window.removeEventListener("scroll", loadAdsense);
+        }
+
+        window.addEventListener("scroll", loadAdsense, { once: true });
+
         const newsletterForm = document.querySelector(".newsletter-form");
         if (newsletterForm) {
           newsletterForm.addEventListener("submit", function (e) {
