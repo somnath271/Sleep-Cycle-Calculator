@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sleep Calculator (Bedtime & Wake Up Time) | REMNIX</title>
+    <title>
+      Sleep Calculator - Find Your Perfect Bedtime & Wake Up Refreshed | REMNIX
+    </title>
     <link rel="icon" href="/images/remnix_favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="https://www.remnix.me/calculate-sleep/" />
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
@@ -30,7 +32,7 @@
 
     <meta
       name="description"
-      content="Sleep calculator and bedtime calculator to find optimal wake up times by sleep cycles. Calculate your perfect sleep time and wake up refreshed."
+      content="Stop waking up tired! Use our free sleep calculator to find the best bedtime or wake-up time based on 90-minute sleep cycles. Wake up refreshed and energized."
     />
     <meta
       name="keywords"
@@ -39,7 +41,7 @@
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Sleep Calculator (Bedtime & Wake Up Time) | REMNIX"
+      content="Sleep Calculator - Find Your Perfect Bedtime & Wake Up Refreshed | REMNIX"
     />
     <meta
       property="og:description"
@@ -52,7 +54,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Sleep Calculator (Bedtime & Wake Up Time) | REMNIX"
+      content="Sleep Calculator - Find Your Perfect Bedtime & Wake Up Refreshed | REMNIX"
     />
     <meta
       name="twitter:description"
@@ -81,6 +83,85 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Sleep Calculator",
+        "description": "Use this free sleep calculator to find your perfect bedtime or wake-up time based on 90-minute sleep cycles. Wake up refreshed and energized!",
+        "url": "https://www.remnix.me/calculate-sleep/",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "All",
+        "screenshot": "https://www.remnix.me/images/og-image.png",
+        "browserRequirements": "Requires JavaScript"
+      }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles should I get each night?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults do well with 4-6 cycles per night (about 6-9 hours)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is waking at the end of a sleep cycle better?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — waking between cycles (not in deep sleep) can reduce grogginess."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the ideal sleep duration for adults?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The ideal range is 7-9 hours for most adults, though individual needs vary."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use this sleep calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose a wake up time to get bedtimes, or pick a bedtime to get recommended wake up times based on 90-minute cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long should a nap be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A power nap of 10-20 minutes can boost alertness; a full sleep cycle nap of ~90 minutes may aid memory and recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sleep latency and why does it matter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sleep latency is the time it takes to fall asleep. Accounting for it helps you still wake at the end of a 90-minute cycle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I recover from sleep debt on weekends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some extra sleep can reduce sleep debt, but large schedule shifts can disrupt the circadian rhythm. Consistency is best."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -995,7 +1076,7 @@
               }
             });
           },
-          { threshold: 0.1 }
+          { threshold: 0.1 },
         );
 
         elements.forEach((element) => observer.observe(element));
@@ -1004,85 +1085,5 @@
 
     <!-- Calculator Script -->
     <script defer src="script.js"></script>
-
-    <!-- Structured Data: WebApplication -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Sleep Calculator",
-        "description": "Calculate your ideal bedtime or wake up time based on sleep cycles.",
-        "url": "https://www.remnix.me/calculate-sleep/",
-        "applicationCategory": "Health",
-        "operatingSystem": "Web",
-        "browserRequirements": "Requires JavaScript"
-      }
-    </script>
-
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How many sleep cycles should I get each night?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most adults do well with 4-6 cycles per night (about 6-9 hours)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is waking at the end of a sleep cycle better?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes — waking between cycles (not in deep sleep) can reduce grogginess."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the ideal sleep duration for adults?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The ideal range is 7-9 hours for most adults, though individual needs vary."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I use this sleep calculator?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Choose a wake up time to get bedtimes, or pick a bedtime to get recommended wake up times based on 90-minute cycles."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long should a nap be?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A power nap of 10–20 minutes can boost alertness; a full sleep cycle nap of ~90 minutes may aid memory and recovery."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is sleep latency and why does it matter?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sleep latency is the time it takes to fall asleep. Accounting for it helps you still wake at the end of a 90-minute cycle."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I recover from sleep debt on weekends?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Some extra sleep can reduce sleep debt, but large schedule shifts can disrupt the circadian rhythm. Consistency is best."
-            }
-          }
-        ]
-      }
-    </script>
   </body>
 </html>
