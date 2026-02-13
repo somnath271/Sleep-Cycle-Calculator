@@ -4,17 +4,17 @@
   <!-- Root pages -->
   <url>
     <loc>https://www.remnix.me/</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-02-13</lastmod>
     <priority>1.0</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/privacy-policy.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-02-13</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.remnix.me/terms-of-service.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-02-13</lastmod>
     <priority>0.5</priority>
   </url>
 
@@ -53,7 +53,7 @@
   <!-- Calculate Sleep pages -->
   <url>
     <loc>https://www.remnix.me/calculate-sleep/</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-02-13</lastmod>
     <priority>0.8</priority> 
   </url>
 
