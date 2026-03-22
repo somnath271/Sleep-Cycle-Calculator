@@ -4,41 +4,49 @@
     <!-- Essential Meta -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Remnix - Free Sleep Cycle & Bedtime Calculator</title>
+    <title>Sleep Cycle Calculator — Free Bedtime & Wake Up Tool | REMNIX</title>
     <meta
       name="description"
-      content="Free sleep cycle calculator using 90-minute sleep cycles. Instantly find the best bedtime or wake-up time to wake refreshed and energized."
+      content="Free sleep cycle calculator that finds your perfect bedtime or wake-up time using 90-minute sleep cycle science. Stop waking up groggy plan smarter sleep tonight."
     />
     <meta name="author" content="Somnath Bhattarai" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.remnix.me/" />
 
-    <!-- Social Meta -->
+    <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Sleep Cycle Calculator | Remnix - Best Bedtime & Wake Time"
+      content="Sleep Cycle Calculator — Free Bedtime & Wake Up Tool | REMNIX"
     />
     <meta
       property="og:description"
-      content="Find your ideal bedtime and wake-up time using the Remnix Sleep Calculator. Wake up refreshed with 90-minute sleep cycle science."
+      content="Find your ideal bedtime and wake-up time using the REMNIX Sleep Calculator. Wake up refreshed with 90-minute sleep cycle science."
     />
-    <meta property="og:site_name" content="Remnix" />
+    <meta property="og:site_name" content="REMNIX" />
     <meta property="og:url" content="https://www.remnix.me/" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://remnix.me/images/og-image.png" />
+    <meta
+      property="og:image"
+      content="https://www.remnix.me/images/og-image.png"
+    />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@sumbhat2" />
     <meta
       name="twitter:title"
-      content="Sleep Cycle Calculator | Best Bedtime & Wake Up Tool"
+      content="Sleep Cycle Calculator — Free Bedtime & Wake Up Tool | REMNIX"
     />
     <meta
       name="twitter:description"
-      content="Plan your sleep using the Remnix Sleep Calculator to wake up energized and productive."
+      content="Plan your sleep using the REMNIX Sleep Calculator to wake up energized and productive."
     />
     <meta
       name="twitter:image"
       content="https://www.remnix.me/images/og-image.png"
     />
+
+    <!-- Preload critical font -->
     <link
       rel="preload"
       href="/roboto.woff2"
@@ -46,101 +54,22 @@
       type="font/woff2"
       crossorigin
     />
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Remnix",
-        "alternateName": "Remnix Sleep Calculator",
-        "url": "https://www.remnix.me/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://www.remnix.me/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      }
-    </script>
+    <link rel="preload" as="image" href="/images/bed.webp" />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Remnix",
-        "url": "https://www.remnix.me/",
-        "logo": "https://www.remnix.me/images/remnix_favicon.ico"
-      }
-    </script>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://www.googletagmanager.com"
+      crossorigin
+    />
+    <link
+      rel="preconnect"
+      href="https://pagead2.googlesyndication.com"
+      crossorigin
+    />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is a sleep cycle?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A sleep cycle is a period of sleep that typically lasts about 90 minutes and includes different stages of sleep, from light sleep to deep sleep and REM sleep. Completing full sleep cycles is important for feeling rested and refreshed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many sleep cycles do I need each night?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Most adults need 4-6 complete sleep cycles per night, which translates to 6-9 hours of sleep. The exact number depends on your individual needs and lifestyle."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the best time to wake up?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The best time to wake up is at the end of a sleep cycle, when you're in light sleep. Our calculator helps you determine the optimal wake-up time based on your sleep cycles."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many hours of sleep is 11 PM to 7 AM?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "11 PM to 7 AM equals 5 full 90-minute sleep cycles, totaling 8 hours of sleep."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many sleep cycles are in 7 hours?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "7 hours of sleep includes approximately 4-5 full 90-minute sleep cycles."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What time should I go to bed if I wake up at 6 AM?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For a 6 AM wake-up, optimal bedtimes are approximately 9:30 PM, 11:00 PM, or 12:30 AM, based on 90-minute sleep cycles and 14 minutes average sleep latency."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I take a nap and still wake refreshed?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Short power naps (~20 minutes) improve alertness, while full 90-minute naps allow a complete sleep cycle, minimizing grogginess."
-            }
-          }
-        ]
-      }
-    </script>
-    <!-- Preconnect for External Resources -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
     <noscript>
       <style>
         .animate {
@@ -149,6 +78,7 @@
         }
       </style>
     </noscript>
+
     <!-- Site Identity & Verification -->
     <meta
       name="google-site-verification"
@@ -168,10 +98,133 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+      gtag("config", "G-6BJRGN2YD4");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "REMNIX",
+        "alternateName": "REMNIX Sleep Calculator",
+        "url": "https://www.remnix.me/"
+      }
+    </script>
 
-      window.addEventListener("load", () => {
-        gtag("config", "G-6BJRGN2YD4");
-      });
+    <!-- Schema: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "REMNIX",
+        "url": "https://www.remnix.me/",
+        "logo": "https://www.remnix.me/images/remnix_favicon.ico",
+        "founder": {
+          "@type": "Person",
+          "name": "Somnath Bhattarai"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/somnath-bhattarai/",
+          "https://x.com/sumbhat2",
+          "https://www.instagram.com/suman_271_/"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a sleep cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A sleep cycle lasts about 90 minutes and includes light sleep (N1, N2), deep sleep (N3), and REM sleep. Completing full cycles helps memory consolidation, emotional regulation, and physical recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles do I need each night?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults need 4-6 complete sleep cycles per night, which equals roughly 6-9 hours of sleep. Use the REMNIX calculator to find times that align with full cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best time to wake up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best time to wake up is at the end of a sleep cycle, when you are in light sleep rather than deep sleep, this reduces sleep inertia and grogginess."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time should I go to bed if I wake up at 6 AM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a 6 AM wake-up, ideal bedtimes based on 90-minute cycles are 8:46 PM (6 cycles), 10:16 PM (5 cycles), 11:46 PM (4 cycles), or 1:16 AM (3 cycles). These include 14 minutes of average sleep latency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What time should I go to bed if I wake up at 7 AM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a 7 AM wake-up, ideal bedtimes are 9:46 PM (6 cycles), 11:16 PM (5 cycles), or 12:46 AM (4 cycles), accounting for 14 minutes of sleep latency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many hours of sleep is 11 PM to 7 AM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "11 PM to 7 AM is 8 hours of sleep, which equals approximately 5 full 90-minute sleep cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles are in 7 hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "7 hours of sleep contains approximately 4-5 full 90-minute sleep cycles. For optimal rest, most adults benefit from 5-6 cycles (7.5-9 hours) nightly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I take a nap and still wake refreshed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Short power naps of 10-20 minutes boost alertness without grogginess. A full 90-minute nap completes one sleep cycle and aids memory and recovery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is sleep inertia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sleep inertia is the groggy, disoriented feeling you get when waking from deep sleep mid-cycle. Timing your wake-up to the end of a 90-minute cycle, when you are in light sleep, dramatically reduces sleep inertia."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Schema: BreadcrumbList for homepage -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.remnix.me/"
+          }
+        ]
+      }
     </script>
 
     <style>
@@ -197,7 +250,6 @@
         opacity: 0;
         transform: translateY(16px);
       }
-
       .animate.visible {
         opacity: 1;
         transform: translateY(0);
@@ -211,6 +263,7 @@
         font-display: swap;
       }
     </style>
+
     <!-- Stylesheets -->
     <link
       rel="stylesheet"
@@ -224,7 +277,6 @@
       media="print"
       onload="this.media = 'all'"
     />
-    <!-- Fonts & Icons -->
     <link
       rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -236,7 +288,13 @@
       media="print"
       onload="this.media = 'all'"
     />
-    <link rel="preload" as="image" href="/images/bed.webp" />
+
+    <!-- Google AdSense -->
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073514999710567"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -247,9 +305,14 @@
           class="navbar-brand"
           href="/"
           style="display: flex; align-items: center; gap: 8px"
+          aria-label="REMNIX Home"
         >
           <h1 class="visually-hidden">Remnix</h1>
-          <i class="fas fa-moon" style="color: #6c5ce7; font-size: 1.5rem"></i>
+          <i
+            class="fas fa-moon"
+            style="color: #6c5ce7; font-size: 1.5rem"
+            aria-hidden="true"
+          ></i>
           <span
             style="
               font-weight: 700;
@@ -259,23 +322,23 @@
               background-clip: text;
               -webkit-text-fill-color: transparent;
             "
+            >REMNIX</span
           >
-            REMNIX
-          </span>
         </a>
-
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link active" href="/" aria-current="page">Home</a>
             <a class="nav-link" href="/learn-about-sleep/">Learn About Sleep</a>
             <a class="nav-link" href="/calculate-sleep/">Calculate Sleep</a>
             <a class="nav-link" href="/blog/">Blog</a>
@@ -284,9 +347,8 @@
         </div>
       </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Redesigned Homepage Body (Hero → Expert Tips) -->
+    <!-- Hero -->
     <header class="hero-section text-white">
       <div
         class="hero-overlay position-absolute start-0 top-0 w-100 h-100"
@@ -305,25 +367,35 @@
             </p>
             <div class="d-flex flex-wrap gap-3 animate">
               <a
-                href="./calculate-sleep/"
+                href="/calculate-sleep/"
                 class="btn btn-primary btn-lg px-4 py-3"
                 role="button"
-                ><i class="fas fa-calculator me-2"></i>Calculate Your Sleep
-                Schedule</a
               >
+                <i class="fas fa-calculator me-2" aria-hidden="true"></i
+                >Calculate Your Sleep Schedule
+              </a>
               <a
-                href="./learn-about-sleep/"
+                href="/learn-about-sleep/"
                 class="btn btn-outline-light btn-lg px-4 py-3"
                 role="button"
-                ><i class="fas fa-book me-2"></i>Learn About Sleep</a
               >
+                <i class="fas fa-book me-2" aria-hidden="true"></i>Learn About
+                Sleep
+              </a>
             </div>
             <ul class="list-inline mt-4 text-white small">
               <li class="list-inline-item">
-                ✓ Science-backed 90-minute cycles
+                <i class="fas fa-check me-1" aria-hidden="true"></i
+                >Science-backed 90-minute cycles
               </li>
-              <li class="list-inline-item">✓ Quick & mobile-friendly</li>
-              <li class="list-inline-item">✓ No sign-up required</li>
+              <li class="list-inline-item">
+                <i class="fas fa-check me-1" aria-hidden="true"></i>Quick &amp;
+                mobile-friendly
+              </li>
+              <li class="list-inline-item">
+                <i class="fas fa-check me-1" aria-hidden="true"></i>No sign-up
+                required
+              </li>
             </ul>
           </div>
           <div class="col-lg-6 text-center d-none d-lg-block">
@@ -333,7 +405,7 @@
             >
               <img
                 src="/images/bed.webp"
-                alt="REMNIX Sleep Cycle Graph"
+                alt="REMNIX sleep cycle calculator illustration showing optimal bedtime and wake time"
                 class="img-fluid"
                 width="520"
                 height="400"
@@ -345,9 +417,12 @@
       </div>
     </header>
 
-    <!-- Highlights -->
-    <section class="py-5 bg-light">
+    <!-- Benefits -->
+    <section class="py-5 bg-light" aria-labelledby="benefits-heading">
       <div class="container">
+        <h2 id="benefits-heading" class="visually-hidden">
+          Benefits of using REMNIX
+        </h2>
         <div class="row g-4 text-center">
           <div class="col-md-4">
             <div class="card h-100 border-0 bg-white p-3">
@@ -356,7 +431,7 @@
                   class="fas fa-brain fa-2x text-primary mb-3"
                   aria-hidden="true"
                 ></i>
-                <h3 class="h5">Sharper Focus & Memory</h3>
+                <h3 class="h5">Sharper Focus &amp; Memory</h3>
                 <p class="mb-0 text-muted">
                   Complete cycles improve cognition and daytime performance.
                 </p>
@@ -395,15 +470,15 @@
       </div>
     </section>
 
-    <!-- In-Depth Guide (SEO content) -->
-    <section class="py-5">
+    <!-- In-Depth Guide -->
+    <section class="py-5" aria-labelledby="guide-heading">
       <div class="container article-content">
-        <h2 class="text-center mb-3">
-          In-Depth Guide to Sleep Cycles & Better Rest
+        <h2 id="guide-heading" class="text-center mb-3">
+          In-Depth Guide to Sleep Cycles &amp; Better Rest
         </h2>
         <p class="lead text-muted text-center">
           Understanding sleep cycles is the first step to better sleep. This
-          short guide explains how cycles work, practical tips to improve sleep
+          guide explains how cycles work, practical tips to improve sleep
           quality, and how to use REMNIX to pick the best sleep schedule for
           your life.
         </p>
@@ -413,14 +488,15 @@
             <article>
               <h3 class="h5">What Are Sleep Cycles?</h3>
               <p class="text-muted">
-                A typical sleep cycle lasts about 90 minutes and includes light
-                sleep, deep (slow-wave) sleep, and REM sleep. Completing full
-                cycles helps memory consolidation, emotional regulation, and
-                physical recovery.
+                A typical sleep cycle lasts about
+                <strong>90 minutes</strong> and includes light sleep (N1, N2),
+                deep slow-wave sleep (N3), and REM sleep. Completing full cycles
+                helps memory consolidation, emotional regulation, and physical
+                recovery.
               </p>
               <p class="text-muted">
-                Optimizing the timing of your sleep (bedtime and wake time) so
-                you wake at the end of a cycle reduces grogginess and improves
+                Timing your bedtime and wake time around complete cycles, so you
+                wake during light sleep which reduces grogginess and improves
                 daytime alertness.
               </p>
             </article>
@@ -437,48 +513,77 @@
                   cycles.
                 </li>
                 <li>
-                  Pick a bedtime that fits your routine — earlier is usually
+                  Pick a bedtime that fits your routine, earlier is usually
                   better for consistent sleep health.
                 </li>
               </ol>
               <p class="text-muted">
-                Tip: Allow ~14 minutes for typical sleep latency (time it takes
-                to fall asleep) when planning your bedtime.
+                <strong>Tip:</strong> Allow ~14 minutes for typical sleep
+                latency (the time it takes to fall asleep) when planning your
+                bedtime.
               </p>
             </article>
           </div>
         </div>
 
-        <div class="row g-4 mt-4">
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="card p-3">
+              <h3 class="h6">What time to sleep for a 6 AM wake-up?</h3>
+              <p class="text-muted small mb-0">
+                Ideal bedtimes: <strong>8:46 PM</strong> (6 cycles),
+                <strong>10:16 PM</strong> (5 cycles), or
+                <strong>11:46 PM</strong> (4 cycles).
+                <a href="/calculate-sleep/">Calculate any custom time →</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3">
+              <h3 class="h6">What time to sleep for a 7 AM wake-up?</h3>
+              <p class="text-muted small mb-0">
+                Ideal bedtimes: <strong>9:46 PM</strong> (6 cycles),
+                <strong>11:16 PM</strong> (5 cycles), or
+                <strong>12:46 AM</strong> (4 cycles).
+                <a href="/calculate-sleep/">Calculate any custom time →</a>
+              </p>
+            </div>
+          </div>
           <div class="col-md-4">
             <div class="card p-3">
-              <h4 class="h6">Quick UX Tips</h4>
-              <ul class="text-muted small">
+              <h3 class="h6">Quick UX Tips</h3>
+              <ul class="text-muted small mb-0">
                 <li>Use dim lighting before bed.</li>
-                <li>Avoid caffeine late in the day.</li>
+                <li>Avoid caffeine after 2-3 PM.</li>
                 <li>Keep a consistent wake-up time.</li>
               </ul>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card p-3">
-              <h4 class="h6">Who benefits most?</h4>
+              <h3 class="h6">Who benefits most?</h3>
               <p class="text-muted small mb-0">
-                Shift workers, students, and anyone with irregular sleep
-                schedules can use cycle-aware timing to improve daytime
-                function.
+                Shift workers, students, parents, and anyone with an irregular
+                schedule can use cycle-aware timing to dramatically improve
+                daytime function.
               </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card p-3">
-              <h4 class="h6">Further Reading</h4>
-              <p class="small">
+              <h3 class="h6">Further Reading</h3>
+              <p class="small mb-0">
                 <a href="/blog/science-of-sleep.html">Science of Sleep</a> •
-                <a href="/blog/sleep-hygiene.html">Sleep Hygiene</a> •
-                <a href="/blog/sleep-disorders.html">Sleep Disorders</a> •
+                <a href="/learn-about-sleep/sleep-hygiene.html"
+                  >Sleep Hygiene</a
+                >
+                •
+                <a href="/learn-about-sleep/sleep-disorders.html"
+                  >Sleep Disorders</a
+                >
+                •
                 <a href="/blog/fall-asleep-fast-15-sleep-hacks.html"
-                  >How to Fall Asleep Fast</a
+                  >Fall Asleep Fast</a
                 >
               </p>
             </div>
@@ -488,32 +593,42 @@
     </section>
 
     <!-- How It Works -->
-    <section class="py-5">
+    <section class="py-5" aria-labelledby="how-it-works-heading">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-lg-6">
-            <h2 class="h3 mb-3">How REMNIX Works</h2>
+            <h2 id="how-it-works-heading" class="h3 mb-3">How REMNIX Works</h2>
             <p class="text-muted">
               We calculate optimal times by counting full 90-minute sleep cycles
-              and factoring sleep latency so you can pick bedtimes or wake times
-              that align with natural sleep stages.
+              and factoring in sleep latency, so you can pick bedtimes or wake
+              times that align with natural sleep stages.
             </p>
             <ul class="list-unstyled mt-3">
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>Choose a
-                wake time or desired sleep length
+                <i
+                  class="fas fa-check-circle text-success me-2"
+                  aria-hidden="true"
+                ></i
+                >Choose a wake time or desired sleep length
               </li>
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>See
-                suggested bedtimes for full cycles
+                <i
+                  class="fas fa-check-circle text-success me-2"
+                  aria-hidden="true"
+                ></i
+                >See suggested bedtimes for full cycles
               </li>
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>Use results
-                to plan naps and night sleep
+                <i
+                  class="fas fa-check-circle text-success me-2"
+                  aria-hidden="true"
+                ></i
+                >Use results to plan naps and night sleep
               </li>
             </ul>
             <a href="/calculate-sleep/" class="btn btn-primary mt-3"
-              >Try the Calculator</a
+              ><i class="fas fa-calculator me-2" aria-hidden="true"></i>Try the
+              Calculator</a
             >
           </div>
           <div class="col-lg-6">
@@ -521,7 +636,7 @@
               <img
                 src="/images/energized.webp"
                 class="card-img-top"
-                alt="Sleep cycles illustration"
+                alt="Visual guide to sleep cycles showing when to wake for the least grogginess"
                 width="520"
                 height="350"
                 loading="lazy"
@@ -539,16 +654,18 @@
       </div>
     </section>
 
-    <!-- Articles -->
-    <section class="py-5 bg-light">
+    <!-- Blog Articles -->
+    <section class="py-5 bg-light" aria-labelledby="blog-heading">
       <div class="container">
-        <h2 class="text-center mb-4 animate">Latest from the REMNIX Blog</h2>
+        <h2 id="blog-heading" class="text-center mb-4 animate">
+          Latest from the REMNIX Blog
+        </h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100">
               <img
                 src="/images/brain.webp"
-                alt="The Science of Sleep"
+                alt="Brain activity during sleep — science of sleep illustration"
                 class="img-fluid"
                 width="400"
                 height="260"
@@ -572,7 +689,7 @@
             <div class="card h-100">
               <img
                 src="/images/health.webp"
-                alt="Understanding Sleep Disorders"
+                alt="Understanding common sleep disorders including insomnia and sleep apnea"
                 class="card-img-top"
                 width="400"
                 height="260"
@@ -585,7 +702,7 @@
                   Learn about common issues and how to address them.
                 </p>
                 <a
-                  href="/blog/sleep-disorders.html"
+                  href="/learn-about-sleep/sleep-disorders.html"
                   class="btn btn-outline-primary"
                   >Read</a
                 >
@@ -596,7 +713,7 @@
             <div class="card h-100">
               <img
                 src="/images/energized.webp"
-                alt="Sleep Hygiene Guide"
+                alt="Sleep hygiene tips for better sleep environment"
                 class="card-img-top"
                 width="400"
                 height="260"
@@ -609,7 +726,7 @@
                   Practical tips to create the best sleep environment.
                 </p>
                 <a
-                  href="/blog/sleep-hygiene.html"
+                  href="/learn-about-sleep/sleep-hygiene.html"
                   class="btn btn-outline-primary"
                   >Read</a
                 >
@@ -619,20 +736,25 @@
         </div>
       </div>
     </section>
+
     <!-- FAQ Section -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" aria-labelledby="faq-heading">
       <div class="container">
-        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <h2 id="faq-heading" class="text-center mb-5">
+          Frequently Asked Questions
+        </h2>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="accordion" id="faqAccordion">
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq1h">
                   <button
                     class="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
                   >
                     What is a sleep cycle and why is it important?
                   </button>
@@ -640,23 +762,28 @@
                 <div
                   id="faq1"
                   class="accordion-collapse collapse show"
+                  aria-labelledby="faq1h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    A <strong>sleep cycle</strong> is a period of sleep lasting
-                    about 90 minutes, including light sleep, deep sleep, and REM
-                    sleep stages. Completing full sleep cycles helps you wake up
-                    refreshed and improves cognitive function.
+                    A <strong>sleep cycle</strong> lasts about 90 minutes and
+                    includes light sleep, deep sleep, and REM sleep. Completing
+                    full cycles helps memory consolidation, emotional
+                    regulation, and physical recovery and waking at the end of a
+                    cycle reduces grogginess.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq2h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
                   >
                     How many sleep cycles do I need each night?
                   </button>
@@ -664,21 +791,26 @@
                 <div
                   id="faq2"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq2h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Most adults need 4–6 full cycles (roughly 6–9 hours). Use
-                    the REMNIX calculator to find times that match full cycles.
+                    Most adults need <strong>4-6 full cycles</strong> (roughly
+                    6-9 hours). Use the REMNIX calculator to find bedtimes or
+                    wake times that align with complete 90-minute cycles.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq3h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
                   >
                     What is the best time to wake up?
                   </button>
@@ -686,22 +818,26 @@
                 <div
                   id="faq3"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq3h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    The best time to wake is at the end of a sleep cycle, when
-                    you are in light sleep rather than deep sleep — this reduces
-                    grogginess.
+                    The best wake time is at the end of a sleep cycle, when you
+                    are in <strong>light sleep (N1 or N2)</strong> rather than
+                    deep sleep, this minimises sleep inertia and grogginess.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq4h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
                   >
                     What time should I go to bed if I wake up at 6 AM?
                   </button>
@@ -709,22 +845,31 @@
                 <div
                   id="faq4"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq4h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Use the <a href="./calculate-sleep/">bedtime calculator</a>.
-                    Typical options for 6 AM are 9:30 PM, 11:00 PM, or 12:30 AM
-                    depending on cycles and sleep latency.
+                    For a 6 AM wake-up, ideal bedtimes are
+                    <strong>8:46 PM</strong> (6 cycles),
+                    <strong>10:16 PM</strong> (5 cycles),
+                    <strong>11:46 PM</strong> (4 cycles), or
+                    <strong>1:16 AM</strong> (3 cycles) — including 14 min sleep
+                    latency. Use the
+                    <a href="/calculate-sleep/">bedtime calculator</a> for any
+                    custom time.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq5h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq5"
+                    aria-expanded="false"
+                    aria-controls="faq5"
                   >
                     Can I take a nap and still wake refreshed?
                   </button>
@@ -732,22 +877,28 @@
                 <div
                   id="faq5"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq5h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Yes — short power naps (~20 minutes) or full 90-minute naps
-                    can boost alertness. Our nap recommendations help you plan
-                    effectively.
+                    Yes. Short
+                    <strong>power naps of 10-20 minutes</strong> boost alertness
+                    without grogginess. A full
+                    <strong>90-minute nap</strong> completes one sleep cycle and
+                    aids memory and recovery.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq6h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq6"
+                    aria-expanded="false"
+                    aria-controls="faq6"
                   >
                     How many hours of sleep is 11 PM to 7 AM?
                   </button>
@@ -755,34 +906,71 @@
                 <div
                   id="faq6"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq6h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Sleeping from 11:00 PM to 7:00 AM gives you
-                    <strong>8 hours of sleep</strong>, which equals about
-                    <strong>5 full 90-minute sleep cycles</strong>.
+                    11 PM to 7 AM is <strong>8 hours of sleep</strong>, which
+                    equals approximately
+                    <strong>5 full 90-minute sleep cycles</strong> — within the
+                    recommended range for most adults.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <h3 class="accordion-header">
+                <h3 class="accordion-header" id="faq7h">
                   <button
                     class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#faq7"
+                    aria-expanded="false"
+                    aria-controls="faq7"
                   >
-                    How many sleep cycles in 7 hours?
+                    How many sleep cycles are in 7 hours?
                   </button>
                 </h3>
                 <div
                   id="faq7"
                   class="accordion-collapse collapse"
+                  aria-labelledby="faq7h"
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    7 hours ≈ 4-5 full 90-minute cycles. For optimal rest, aim
-                    for 6-9 hours (4-6 cycles) nightly.
+                    7 hours contains approximately
+                    <strong>4-5 full 90-minute cycles</strong>. For optimal
+                    rest, most adults benefit from 5-6 cycles (7.5-9 hours)
+                    nightly.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faq8h">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq8"
+                    aria-expanded="false"
+                    aria-controls="faq8"
+                  >
+                    What is sleep inertia?
+                  </button>
+                </h3>
+                <div
+                  id="faq8"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="faq8h"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    <strong>Sleep inertia</strong> is the groggy, disoriented
+                    feeling you experience when waking mid-cycle especially from
+                    deep sleep (N3). Timing your alarm to the end of a 90-minute
+                    cycle, when you are in light sleep, dramatically reduces
+                    this effect.
                   </div>
                 </div>
               </div>
@@ -793,17 +981,17 @@
     </section>
 
     <!-- Expert Tips -->
-    <section class="py-5">
+    <section class="py-5" aria-labelledby="tips-heading">
       <div class="container">
-        <h2 class="text-center mb-4">Expert Sleep Tips</h2>
+        <h2 id="tips-heading" class="text-center mb-4">Expert Sleep Tips</h2>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
                 <h3 class="h6">Keep a Consistent Schedule</h3>
                 <p class="text-muted small mb-0">
-                  Go to bed and wake at similar times daily to stabilize your
-                  circadian rhythm.
+                  Go to bed and wake at similar times daily to stabilise your
+                  circadian rhythm even on weekends.
                 </p>
               </div>
             </div>
@@ -811,9 +999,10 @@
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm p-3">
               <div class="card-body">
-                <h3 class="h6">Optimize Your Bedroom</h3>
+                <h3 class="h6">Optimise Your Bedroom</h3>
                 <p class="text-muted small mb-0">
-                  Keep it cool, dark, and quiet; limit screens before bed.
+                  Keep it cool (15-19°C), dark, and quiet. Limit screens 60-90
+                  minutes before bed.
                 </p>
               </div>
             </div>
@@ -823,8 +1012,8 @@
               <div class="card-body">
                 <h3 class="h6">Relax Before Sleep</h3>
                 <p class="text-muted small mb-0">
-                  Try breathing, light stretching or a short reading routine to
-                  unwind.
+                  Try breathing exercises, light stretching, or a short reading
+                  routine to wind down before bed.
                 </p>
               </div>
             </div>
@@ -839,12 +1028,9 @@
         <div class="row">
           <div class="col-12 text-center">
             <p>
-              <i class="fas fa-moon"></i>
-              &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Somnath | Designed for Better Sleep
+              <i class="fas fa-moon" aria-hidden="true"></i>
+              &copy; <span id="currentYear"></span> Somnath | Designed for
+              Better Sleep
             </p>
             <div class="footer-links">
               <a href="/privacy-policy.html" class="text-white"
@@ -861,25 +1047,22 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
-              >
-                <i class="fab fa-linkedin" aria-hidden="true"></i>
-              </a>
+                ><i class="fab fa-linkedin" aria-hidden="true"></i
+              ></a>
               <a
-                href="https://www.x.com/sumbhat2"
+                href="https://x.com/sumbhat2"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter profile"
-              >
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-              </a>
+                aria-label="Twitter / X profile"
+                ><i class="fab fa-twitter" aria-hidden="true"></i
+              ></a>
               <a
                 href="https://www.instagram.com/suman_271_/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram profile"
-              >
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-              </a>
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
             </div>
             <div class="mt-3">
               <p class="mb-0">
@@ -894,17 +1077,16 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
 
-    <!-- Animation + Lazy Ads Script -->
     <script defer>
-      document.addEventListener("DOMContentLoaded", function () {
-        const elements = document.querySelectorAll(".animate");
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 
+      document.addEventListener("DOMContentLoaded", function () {
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
@@ -916,40 +1098,9 @@
           },
           { threshold: 0.2 },
         );
-
-        elements.forEach((el) => observer.observe(el));
-
-        let adsLoaded = false;
-
-        function loadAdsense() {
-          if (adsLoaded) return;
-          adsLoaded = true;
-
-          const script = document.createElement("script");
-          script.src =
-            "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-          script.async = true;
-          script.setAttribute("data-ad-client", "ca-pub-4073514999710567");
-          document.head.appendChild(script);
-
-          window.removeEventListener("scroll", loadAdsense);
-        }
-
-        window.addEventListener("scroll", loadAdsense, { once: true });
-
-        const newsletterForm = document.querySelector(".newsletter-form");
-        if (newsletterForm) {
-          newsletterForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            if (email) {
-              alert(
-                "Thank you for subscribing! We will keep you updated with the latest sleep science news.",
-              );
-              this.reset();
-            }
-          });
-        }
+        document
+          .querySelectorAll(".animate")
+          .forEach((el) => observer.observe(el));
       });
     </script>
   </body>
