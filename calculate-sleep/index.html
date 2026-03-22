@@ -9,13 +9,15 @@
     <link rel="icon" href="/images/remnix_favicon.ico" type="image/x-icon" />
     <link rel="canonical" href="https://www.remnix.me/calculate-sleep/" />
     <meta name="google-adsense-account" content="ca-pub-4073514999710567" />
-    <!-- Google Adsense -->
+
+    <!-- Google AdSense -->
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073514999710567"
       crossorigin="anonymous"
     ></script>
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-6BJRGN2YD4"
@@ -26,18 +28,16 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-6BJRGN2YD4");
     </script>
 
     <meta
       name="description"
-      content="Stop waking up tired! Use our free sleep calculator to find the best bedtime or wake-up time based on 90-minute sleep cycles. Wake up refreshed and energized."
+      content="Free sleep calculator that finds your perfect bedtime or wake-up time using 90-minute sleep cycle science. Stop waking up groggy — plan smarter sleep tonight."
     />
-    <meta
-      name="keywords"
-      content="sleep calculator, bedtime calculator, wake up time calculator, sleep cycles, REM sleep, deep sleep, optimal wake up time, best time to sleep, sleep schedule, sleep hygiene, how to fall asleep fast, recommended sleep hours, circadian rhythm, sleep debt, sleep latency, sleep inertia, insomnia, chronotype, morning routine, power nap, nap calculator, polyphasic sleep, biphasic sleep, monophasic sleep, melatonin, sleep deprivation, sleep apnea, CPAP, snoring, sleep tracker"
-    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Somnath Bhattarai" />
+
     <!-- Open Graph -->
     <meta
       property="og:title"
@@ -49,8 +49,13 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.remnix.me/calculate-sleep/" />
-    <meta property="og:image" content="/images/og-image.png" />
-    <!-- Twitter -->
+    <meta
+      property="og:image"
+      content="https://www.remnix.me/images/og-image.png"
+    />
+    <meta property="og:site_name" content="REMNIX" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -60,8 +65,13 @@
       name="twitter:description"
       content="Calculate your perfect sleep or wake time based on sleep cycles and wake up refreshed."
     />
-    <meta name="twitter:image" content="/images/og-image.png" />
+    <meta
+      name="twitter:image"
+      content="https://www.remnix.me/images/og-image.png"
+    />
     <meta name="twitter:site" content="@sumbhat2" />
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link
@@ -74,6 +84,7 @@
       href="https://pagead2.googlesyndication.com"
       crossorigin
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -83,21 +94,39 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles.css" />
+
+    <!-- Schema: WebApplication -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Sleep Calculator",
-        "description": "Use this free sleep calculator to find your perfect bedtime or wake-up time based on 90-minute sleep cycles. Wake up refreshed and energized!",
+        "name": "REMNIX Sleep Calculator",
+        "description": "Free sleep calculator that finds your perfect bedtime or wake-up time using 90-minute sleep cycle science.",
         "url": "https://www.remnix.me/calculate-sleep/",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "screenshot": "https://www.remnix.me/images/og-image.png",
-        "browserRequirements": "Requires JavaScript"
+        "browserRequirements": "Requires JavaScript",
+        "dateModified": "2026-03-22",
+        "author": {
+          "@type": "Person",
+          "name": "Somnath Bhattarai",
+          "url": "https://www.remnix.me/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "REMNIX",
+          "url": "https://www.remnix.me/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
       }
     </script>
 
-    <!-- Structured Data: FAQPage -->
+    <!-- Schema: FAQPage -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -108,7 +137,7 @@
             "name": "How many sleep cycles should I get each night?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Most adults do well with 4-6 cycles per night (about 6-9 hours)."
+              "text": "Most adults do well with 4-6 sleep cycles per night, which equals roughly 6-9 hours of total sleep."
             }
           },
           {
@@ -116,7 +145,7 @@
             "name": "Is waking at the end of a sleep cycle better?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes — waking between cycles (not in deep sleep) can reduce grogginess."
+              "text": "Yes. Waking between cycles rather than during deep sleep reduces grogginess and helps you feel alert faster."
             }
           },
           {
@@ -124,7 +153,7 @@
             "name": "What is the ideal sleep duration for adults?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The ideal range is 7-9 hours for most adults, though individual needs vary."
+              "text": "The ideal range is 7-9 hours for most adults aged 18-64, though individual needs vary."
             }
           },
           {
@@ -132,7 +161,7 @@
             "name": "How do I use this sleep calculator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Choose a wake up time to get bedtimes, or pick a bedtime to get recommended wake up times based on 90-minute cycles."
+              "text": "Choose a wake-up time to see recommended bedtimes, or pick a bedtime to see optimal wake-up times — all based on 90-minute sleep cycles."
             }
           },
           {
@@ -140,7 +169,7 @@
             "name": "How long should a nap be?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A power nap of 10-20 minutes can boost alertness; a full sleep cycle nap of ~90 minutes may aid memory and recovery."
+              "text": "A power nap of 10-20 minutes boosts alertness without grogginess. A full 90-minute nap completes one sleep cycle and aids memory and recovery."
             }
           },
           {
@@ -148,7 +177,7 @@
             "name": "What is sleep latency and why does it matter?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sleep latency is the time it takes to fall asleep. Accounting for it helps you still wake at the end of a 90-minute cycle."
+              "text": "Sleep latency is the time it takes to fall asleep after going to bed. Accounting for it ensures your wake-up aligns with the end of a real 90-minute cycle."
             }
           },
           {
@@ -156,8 +185,46 @@
             "name": "Can I recover from sleep debt on weekends?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Some extra sleep can reduce sleep debt, but large schedule shifts can disrupt the circadian rhythm. Consistency is best."
+              "text": "Some extra sleep can reduce sleep debt, but large weekend schedule shifts disrupt your circadian rhythm. Consistency across the week is more beneficial."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What time should I go to bed if I wake up at 6am?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For a 6:00 AM wake time, ideal bedtimes are 8:46 PM (6 cycles), 10:16 PM (5 cycles), 11:46 PM (4 cycles), or 1:16 AM (3 cycles). Use the calculator above for your exact time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles are in 8 hours?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Eight hours of sleep contains approximately 5 to 6 full 90-minute sleep cycles, which is within the recommended range for most adults."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Schema: BreadcrumbList -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.remnix.me/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sleep Calculator",
+            "item": "https://www.remnix.me/calculate-sleep/"
           }
         ]
       }
@@ -183,15 +250,17 @@
               background-clip: text;
               -webkit-text-fill-color: transparent;
             "
+            >REMNIX</span
           >
-            REMNIX
-          </span>
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -199,7 +268,10 @@
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="/">Home</a>
             <a class="nav-link" href="/learn-about-sleep/">Learn About Sleep</a>
-            <a class="nav-link active" href="/calculate-sleep/"
+            <a
+              class="nav-link active"
+              href="/calculate-sleep/"
+              aria-current="page"
               >Calculate Sleep</a
             >
             <a class="nav-link" href="/blog/">Blog</a>
@@ -208,6 +280,18 @@
         </div>
       </div>
     </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Sleep Calculator
+          </li>
+        </ol>
+      </nav>
+    </div>
 
     <!-- Main Content -->
     <div class="container my-5">
@@ -220,10 +304,10 @@
             </p>
           </div>
 
-          <!-- Wake Up Time Calculator -->
+          <!-- Bedtime Calculator -->
           <div class="card shadow-lg mb-5 animate-on-scroll">
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Calculate Bedtime</h3>
+              <h2 class="text-center mb-4 h3">Calculate Bedtime</h2>
               <p class="text-center mb-4">When do you want to wake up?</p>
               <form id="wakeUpForm">
                 <div class="row g-3 justify-content-center">
@@ -231,20 +315,24 @@
                     <label for="wakeUpHours" class="form-label visually-hidden"
                       >Wake up hour</label
                     >
-                    <select class="form-select" id="wakeUpHours">
+                    <select
+                      class="form-select"
+                      id="wakeUpHours"
+                      aria-label="Wake up hour"
+                    >
                       <option value="">Hour</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -253,19 +341,27 @@
                       class="form-label visually-hidden"
                       >Wake up minutes</label
                     >
-                    <select class="form-select" id="wakeUpMinutes">
+                    <select
+                      class="form-select"
+                      id="wakeUpMinutes"
+                      aria-label="Wake up minutes"
+                    >
                       <option value="">Minute</option>
-                      <option value="00">00</option>
-                      <option value="15">15</option>
-                      <option value="30">30</option>
-                      <option value="45">45</option>
+                      <option>00</option>
+                      <option>15</option>
+                      <option>30</option>
+                      <option>45</option>
                     </select>
                   </div>
                   <div class="col-md-3">
                     <label for="wakeUpPeriod" class="form-label visually-hidden"
                       >AM or PM</label
                     >
-                    <select class="form-select" id="wakeUpPeriod">
+                    <select
+                      class="form-select"
+                      id="wakeUpPeriod"
+                      aria-label="AM or PM"
+                    >
                       <option value="AM">AM</option>
                       <option value="PM">PM</option>
                     </select>
@@ -293,10 +389,10 @@
             </div>
           </div>
 
-          <!-- Bedtime Calculator -->
+          <!-- Wake Up Time Calculator -->
           <div class="card shadow-lg mb-5 animate-on-scroll">
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Calculate Wake Up Time</h3>
+              <h2 class="text-center mb-4 h3">Calculate Wake Up Time</h2>
               <p class="text-center mb-4">When do you want to go to bed?</p>
               <form id="bedtimeForm">
                 <div class="row g-3 justify-content-center">
@@ -304,20 +400,24 @@
                     <label for="bedtimeHours" class="form-label visually-hidden"
                       >Bedtime hour</label
                     >
-                    <select class="form-select" id="bedtimeHours">
+                    <select
+                      class="form-select"
+                      id="bedtimeHours"
+                      aria-label="Bedtime hour"
+                    >
                       <option value="">Hour</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -326,12 +426,16 @@
                       class="form-label visually-hidden"
                       >Bedtime minutes</label
                     >
-                    <select class="form-select" id="bedtimeMinutes">
+                    <select
+                      class="form-select"
+                      id="bedtimeMinutes"
+                      aria-label="Bedtime minutes"
+                    >
                       <option value="">Minute</option>
-                      <option value="00">00</option>
-                      <option value="15">15</option>
-                      <option value="30">30</option>
-                      <option value="45">45</option>
+                      <option>00</option>
+                      <option>15</option>
+                      <option>30</option>
+                      <option>45</option>
                     </select>
                   </div>
                   <div class="col-md-3">
@@ -340,7 +444,11 @@
                       class="form-label visually-hidden"
                       >AM or PM</label
                     >
-                    <select class="form-select" id="bedtimePeriod">
+                    <select
+                      class="form-select"
+                      id="bedtimePeriod"
+                      aria-label="AM or PM"
+                    >
                       <option value="AM">AM</option>
                       <option value="PM">PM</option>
                     </select>
@@ -368,10 +476,10 @@
             </div>
           </div>
 
-          <!-- Quick Sleep Now Buttons -->
+          <!-- Quick Calculate -->
           <div class="card shadow-lg mb-5 animate-on-scroll">
             <div class="card-body p-4 text-center">
-              <h3 class="mb-4">Quick Calculate</h3>
+              <h2 class="mb-4 h3">Quick Calculate</h2>
               <button
                 type="button"
                 class="btn btn-primary btn-lg me-2"
@@ -391,55 +499,14 @@
             </div>
           </div>
 
-          <!-- How This Calculator Works -->
-          <div class="card shadow-lg mb-5 animate-on-scroll">
-            <div class="card-body p-4">
-              <h3 class="text-center mb-4">How This Sleep Calculator Works</h3>
-              <p>
-                This sleep time calculator uses natural
-                <strong>sleep cycles</strong> of about 90 minutes. Waking at the
-                end of a cycle can reduce sleep inertia and help you feel more
-                refreshed. Choose a desired wake up time to see recommended
-                bedtimes, or select a bedtime to see your optimal wake up times.
-              </p>
-              <p class="mb-0">
-                Want to learn more? Read about
-                <a href="/learn-about-sleep/sleep-cycles.html">sleep cycles</a>,
-                <a href="/learn-about-sleep/sleep-hygiene.html">sleep hygiene</a
-                >, and
-                <a href="/learn-about-sleep/sleep-disorders.html"
-                  >sleep disorders</a
-                >.
-              </p>
-            </div>
-          </div>
-
-          <!-- Recommended Sleep Hours -->
-          <div class="card shadow-lg mb-5 animate-on-scroll">
-            <div class="card-body p-4">
-              <h3 class="text-center mb-4">Recommended Sleep Hours</h3>
-              <ul>
-                <li>
-                  <strong>Adults (18-64):</strong> 7-9 hours (≈ 5-6 cycles)
-                </li>
-                <li><strong>Older adults (65+):</strong> 7-8 hours</li>
-                <li><strong>Teenagers (14-17):</strong> 8-10 hours</li>
-              </ul>
-              <p class="mb-0 text-muted">
-                Everyone is different. Use this bedtime calculator as a guide
-                and adjust based on how you feel.
-              </p>
-            </div>
-          </div>
-
-          <!-- Results Section -->
+          <!-- Results -->
           <div
             id="results"
             class="card shadow-lg mb-5 animate-on-scroll"
             style="display: none"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Your Sleep Schedule</h3>
+              <h2 class="text-center mb-4 h3">Your Sleep Schedule</h2>
               <div class="alert alert-info">
                 <i class="fas fa-info-circle me-2"></i>
                 Each sleep cycle lasts about 90 minutes. Waking up at the end of
@@ -457,13 +524,166 @@
             </div>
           </div>
 
-          <!-- FAQ Section -->
+          <!-- How This Calculator Works -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h2 class="text-center mb-4 h3">
+                How This Sleep Calculator Works
+              </h2>
+              <p>
+                This sleep time calculator uses natural
+                <strong>sleep cycles</strong> of about 90 minutes. Waking at the
+                end of a cycle can reduce sleep inertia and help you feel more
+                refreshed. Choose a desired wake up time to see recommended
+                bedtimes, or select a bedtime to see your optimal wake up times.
+              </p>
+              <p>
+                We also factor in <strong>14 minutes of sleep latency</strong> —
+                the average time it takes to actually fall asleep after getting
+                into bed — so your results are more accurate than calculators
+                that assume you sleep instantly.
+              </p>
+              <p class="mb-0">
+                Want to learn more? Read about
+                <a href="/learn-about-sleep/sleep-cycles.html">sleep cycles</a>,
+                <a href="/learn-about-sleep/sleep-hygiene.html">sleep hygiene</a
+                >, and
+                <a href="/learn-about-sleep/sleep-disorders.html"
+                  >sleep disorders</a
+                >.
+              </p>
+            </div>
+          </div>
+
+          <!-- Recommended Sleep Hours -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h2 class="text-center mb-4 h3">
+                Recommended Sleep Hours by Age
+              </h2>
+              <table class="table table-dark table-bordered">
+                <thead>
+                  <tr>
+                    <th>Age group</th>
+                    <th>Hours needed</th>
+                    <th>Sleep cycles</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Teenagers (14-17)</td>
+                    <td>8-10 hours</td>
+                    <td>5-6+ cycles</td>
+                  </tr>
+                  <tr>
+                    <td>Adults (18-64)</td>
+                    <td>7-9 hours</td>
+                    <td>4-6 cycles</td>
+                  </tr>
+                  <tr>
+                    <td>Older adults (65+)</td>
+                    <td>7-8 hours</td>
+                    <td>4-5 cycles</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="mb-0 text-muted">
+                Everyone is different. Use this bedtime calculator as a guide
+                and adjust based on how you feel each morning.
+              </p>
+            </div>
+          </div>
+
+          <!-- Common Sleep Time Questions -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h2 class="text-center mb-4 h3">Common Sleep Time Questions</h2>
+
+              <h3 class="h5 mt-3">
+                What time should I go to bed if I wake up at 6 AM?
+              </h3>
+              <p>
+                For a 6:00 AM wake time, ideal bedtimes based on 90-minute
+                cycles are <strong>8:46 PM</strong> (6 cycles / 9 hrs),
+                <strong>10:16 PM</strong> (5 cycles / 7.5 hrs),
+                <strong>11:46 PM</strong> (4 cycles / 6 hrs), or
+                <strong>1:16 AM</strong> (3 cycles / 4.5 hrs). Use the
+                calculator above for any custom time.
+              </p>
+
+              <h3 class="h5 mt-3">
+                What time should I go to bed if I wake up at 7 AM?
+              </h3>
+              <p>
+                For a 7:00 AM wake time, ideal bedtimes are
+                <strong>9:46 PM</strong> (6 cycles),
+                <strong>11:16 PM</strong> (5 cycles), or
+                <strong>12:46 AM</strong> (4 cycles).
+              </p>
+
+              <h3 class="h5 mt-3">How many sleep cycles are in 8 hours?</h3>
+              <p>
+                Eight hours contains approximately
+                <strong>5-6 full 90-minute cycles</strong> — the sweet spot for
+                most adults. This is why 8 hours is considered the gold standard
+                for sleep duration.
+              </p>
+
+              <h3 class="h5 mt-3">What is the best time to wake up?</h3>
+              <p class="mb-0">
+                The best wake-up time is at the
+                <strong>end of a sleep cycle</strong> when you are naturally in
+                light sleep. This minimises sleep inertia (grogginess). Use our
+                calculator to find your ideal window based on when you go to
+                bed.
+              </p>
+            </div>
+          </div>
+
+          <!-- What Happens During Sleep Stages -->
+          <div class="card shadow-lg mb-5 animate-on-scroll">
+            <div class="card-body p-4">
+              <h2 class="text-center mb-4 h3">
+                What Happens During Each Sleep Stage
+              </h2>
+
+              <h3 class="h5">Stage N1 — Light sleep</h3>
+              <p>
+                The transition from wakefulness. Muscles relax, heartbeat slows.
+                Lasts 1-7 minutes. Easiest stage to wake from — this is why
+                timing your alarm to a cycle end works.
+              </p>
+
+              <h3 class="h5">Stage N2 — True sleep</h3>
+              <p>
+                Body temperature drops, heart rate slows further. Sleep spindles
+                appear. You spend roughly 50% of the night in this stage. Memory
+                processing begins here.
+              </p>
+
+              <h3 class="h5">Stage N3 — Deep sleep</h3>
+              <p>
+                Physical repair, immune support, and growth hormone release
+                happen here. This is the hardest stage to wake from —
+                interrupting it causes the worst grogginess.
+              </p>
+
+              <h3 class="h5">REM — Dream sleep</h3>
+              <p class="mb-0">
+                Memory consolidation, emotional regulation, and creativity. REM
+                periods grow longer in the second half of the night — another
+                reason a full night's sleep matters more than a short one.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
           <div class="card shadow-lg mb-5 animate-on-scroll" id="faq">
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Sleep Calculator FAQs</h3>
+              <h2 class="text-center mb-4 h3">Sleep Calculator FAQs</h2>
               <div class="accordion" id="faqAccordion">
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q1h">
+                  <h3 class="accordion-header" id="q1h">
                     <button
                       class="accordion-button"
                       type="button"
@@ -474,7 +694,7 @@
                     >
                       How many sleep cycles should I get each night?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q1"
                     class="accordion-collapse collapse show"
@@ -487,8 +707,9 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q2h">
+                  <h3 class="accordion-header" id="q2h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -499,7 +720,7 @@
                     >
                       Is waking at the end of a sleep cycle better?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q2"
                     class="accordion-collapse collapse"
@@ -508,12 +729,13 @@
                   >
                     <div class="accordion-body">
                       Yes. Waking <em>between</em> cycles (not from deep sleep)
-                      can reduce grogginess.
+                      can significantly reduce grogginess and sleep inertia.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q3h">
+                  <h3 class="accordion-header" id="q3h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -524,7 +746,7 @@
                     >
                       What is the ideal sleep duration for adults?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q3"
                     class="accordion-collapse collapse"
@@ -532,13 +754,14 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      The ideal range is <strong>7-9 hours</strong>, though
-                      individual needs vary.
+                      The ideal range is <strong>7-9 hours</strong> for adults
+                      aged 18-64, though individual needs vary.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q4h">
+                  <h3 class="accordion-header" id="q4h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -549,7 +772,7 @@
                     >
                       How do I use this sleep calculator?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q4"
                     class="accordion-collapse collapse"
@@ -563,8 +786,9 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q5h">
+                  <h3 class="accordion-header" id="q5h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -575,7 +799,7 @@
                     >
                       How long should a nap be?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q5"
                     class="accordion-collapse collapse"
@@ -583,15 +807,15 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      A <strong>power nap</strong> of 10–20 minutes can boost
-                      alertness. A full <strong>sleep cycle</strong>
-                      nap of ~90 minutes may aid memory and recovery without
-                      heavy sleep inertia.
+                      A <strong>power nap</strong> of 10-20 minutes boosts
+                      alertness. A full <strong>90-minute nap</strong> completes
+                      one cycle and aids memory without heavy sleep inertia.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q6h">
+                  <h3 class="accordion-header" id="q6h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -602,7 +826,7 @@
                     >
                       What is sleep latency and why does it matter?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q6"
                     class="accordion-collapse collapse"
@@ -611,15 +835,15 @@
                   >
                     <div class="accordion-body">
                       <strong>Sleep latency</strong> is the time it takes to
-                      fall asleep. Accounting for it helps you select a
-                      <strong>bedtime</strong> so you still wake at the end of a
-                      90-minute cycle. Many people assume zero latency, which
-                      can shift the <strong>wake up time</strong>.
+                      fall asleep. Our calculator adds 14 minutes to all results
+                      so your wake-up truly aligns with a cycle end, not just
+                      when you got into bed.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
-                  <h4 class="accordion-header" id="q7h">
+                  <h3 class="accordion-header" id="q7h">
                     <button
                       class="accordion-button collapsed"
                       type="button"
@@ -630,7 +854,7 @@
                     >
                       Can I recover from sleep debt on weekends?
                     </button>
-                  </h4>
+                  </h3>
                   <div
                     id="q7"
                     class="accordion-collapse collapse"
@@ -638,11 +862,10 @@
                     data-bs-parent="#faqAccordion"
                   >
                     <div class="accordion-body">
-                      A little extra sleep may reduce
-                      <strong>sleep debt</strong>, but big schedule swings can
-                      disrupt the <strong>circadian rhythm</strong>. Aim for
-                      consistency and gradually shift your
-                      <strong>sleep schedule</strong> if needed.
+                      A little extra sleep may help, but big schedule swings
+                      disrupt your <strong>circadian rhythm</strong>.
+                      Consistency 7 days a week is far more effective than
+                      weekend catch-up sleep.
                     </div>
                   </div>
                 </div>
@@ -650,15 +873,15 @@
             </div>
           </div>
 
-          <!-- How to Improve Your Sleep Quality -->
+          <!-- How to Improve Sleep Quality -->
           <div
             class="card shadow-lg mb-5 animate-on-scroll"
             id="improve-sleep-quality"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">
+              <h2 class="text-center mb-4 h3">
                 How to Improve Your Sleep Quality
-              </h3>
+              </h2>
               <p>
                 High-quality sleep depends on consistent
                 <strong>sleep schedules</strong>, a dark and cool
@@ -671,7 +894,7 @@
                 stretching, or meditation—to signal to your body that it's time
                 to wind down.
               </p>
-              <p>
+              <p class="mb-0">
                 If you're looking to build better habits, explore our
                 <a href="/learn-about-sleep/sleep-hygiene.html"
                   >sleep hygiene guide</a
@@ -688,7 +911,7 @@
             id="what-happens-during-sleep"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">What Happens During Sleep</h3>
+              <h2 class="text-center mb-4 h3">What Happens During Sleep</h2>
               <p>
                 Sleep is composed of <strong>NREM</strong> (stages N1, N2, N3)
                 and <strong>REM sleep</strong>, cycling every ~90 minutes. In
@@ -696,9 +919,9 @@
                 recovery: tissue repair, immune support, and growth hormone
                 release. In <strong>REM sleep</strong>, the brain consolidates
                 memories, processes emotions, and supports learning and
-                creativity. Cycling between these stages is normal and healthy.
+                creativity.
               </p>
-              <p>
+              <p class="mb-0">
                 Our
                 <a href="/learn-about-sleep/sleep-cycles.html"
                   >sleep cycle article</a
@@ -710,24 +933,24 @@
             </div>
           </div>
 
-          <!-- What is REM Sleep? -->
+          <!-- What is REM Sleep -->
           <div
             class="card shadow-lg mb-5 animate-on-scroll"
             id="what-is-rem-sleep"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">What is REM Sleep?</h3>
+              <h2 class="text-center mb-4 h3">What is REM Sleep?</h2>
               <p>
                 <strong>REM (Rapid Eye Movement) sleep</strong> is the stage
                 associated with vivid dreams and heightened brain activity. It
                 supports <strong>memory consolidation</strong>, emotional
-                regulation, and neuroplasticity. Adults typically spend 20–25%
+                regulation, and neuroplasticity. Adults typically spend 20-25%
                 of the night in REM, with longer REM periods occurring in the
                 second half of the night. Disruptions to REM—like inconsistent
                 bedtimes, alcohol, or stress—can affect mood, cognition, and
                 next-day performance.
               </p>
-              <p>
+              <p class="mb-0">
                 Learn more about
                 <a href="/learn-about-sleep/sleep-hygiene.html"
                   >habits that protect REM sleep</a
@@ -743,14 +966,14 @@
             id="fall-asleep-faster"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Tips to Fall Asleep Faster</h3>
+              <h2 class="text-center mb-4 h3">Tips to Fall Asleep Faster</h2>
               <ul>
                 <li>
-                  Keep a consistent <strong>bedtime</strong> and wake time—even
-                  on weekends.
+                  Keep a consistent <strong>bedtime</strong> and wake time —
+                  even on weekends.
                 </li>
                 <li>
-                  Dim lights 60–90 minutes before bed to support
+                  Dim lights 60-90 minutes before bed to support
                   <strong>melatonin</strong> release.
                 </li>
                 <li>
@@ -778,17 +1001,16 @@
             id="common-questions"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Common Sleep Questions</h3>
+              <h2 class="text-center mb-4 h3">Common Sleep Questions</h2>
               <p>
                 <strong>How many hours of sleep do I need?</strong> Most adults
-                need <strong>7–9 hours</strong> per night, often corresponding
-                to <strong>5–6 sleep cycles</strong>. Teens and older adults
-                have different ranges. If you wake groggy, try adjusting your
-                <strong>sleep window</strong> by 15–30 minutes and aim to wake
-                at the end of a 90-minute cycle.
+                need <strong>7-9 hours</strong> per night, corresponding to
+                <strong>5-6 sleep cycles</strong>. If you wake groggy, try
+                adjusting your <strong>sleep window</strong> by 15-30 minutes to
+                better align with cycle boundaries.
               </p>
               <p>
-                <strong>What’s the best time to sleep?</strong> Align sleep with
+                <strong>What's the best time to sleep?</strong> Align sleep with
                 your <strong>circadian rhythm</strong> by keeping a consistent
                 schedule. Use this <strong>bedtime calculator</strong> to find
                 an optimal window based on your desired wake time or current
@@ -796,9 +1018,8 @@
               </p>
               <p class="mb-0">
                 Explore more in our
-                <a href="/learn-about-sleep/">Learn About Sleep</a>
-                hub and <a href="/blog/">sleep blog</a> for in-depth guides,
-                including
+                <a href="/learn-about-sleep/">Learn About Sleep</a> hub and
+                <a href="/blog/">sleep blog</a>, including
                 <a href="/blog/fall-asleep-fast-15-sleep-hacks.html"
                   >how to fall asleep fast</a
                 >.
@@ -806,24 +1027,23 @@
             </div>
           </div>
 
-          <!-- How This Tool Compares -->
+          <!-- How This Tool -->
           <div
             class="card shadow-lg mb-5 animate-on-scroll"
             id="how-it-compares"
           >
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">
+              <h2 class="text-center mb-4 h3">
                 How This Sleep Calculator Compares
-              </h3>
+              </h2>
               <p>
                 Unlike a generic <strong>sleep chart</strong> or simple
                 <strong>sleep tracker</strong>, this calculator uses 90-minute
                 <strong>sleep cycle</strong> modeling to recommend precise
                 <strong>bedtimes</strong> and <strong>wake up times</strong>. It
-                also accounts for <strong>sleep latency</strong> (the minutes it
-                takes to fall asleep) by suggesting multiple options across
-                cycles, improving your chances of waking at the end of a
-                <strong>REM</strong> or light sleep stage.
+                also accounts for <strong>sleep latency</strong> by suggesting
+                multiple options across cycles, improving your chances of waking
+                at the end of a <strong>REM</strong> or light sleep stage.
               </p>
               <p class="mb-0">
                 For deeper learning, explore
@@ -839,16 +1059,16 @@
             </div>
           </div>
 
-          <!-- Benefits of Using a Sleep Cycle Calculator -->
+          <!-- Benefits -->
           <div class="card shadow-lg mb-5 animate-on-scroll" id="benefits">
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">
+              <h2 class="text-center mb-4 h3">
                 Benefits of Using a Sleep Cycle Calculator
-              </h3>
+              </h2>
               <ul>
                 <li>
                   Reduce morning <strong>sleep inertia</strong> and grogginess
-                  by timing wake-ups.
+                  by timing wake-ups to cycle ends.
                 </li>
                 <li>
                   Build a consistent <strong>sleep schedule</strong> aligned to
@@ -871,102 +1091,16 @@
             </div>
           </div>
 
-          <!-- Wake Up Time Modal -->
-          <div
-            class="modal fade"
-            id="wakeUpTimeModal"
-            tabindex="-1"
-            aria-labelledby="wakeUpTimeModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="wakeUpTimeModalLabel">
-                    Set Your Wake Up Time
-                  </h5>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <form id="wakeUpTimeForm">
-                    <div class="mb-3">
-                      <label for="modalWakeUpHours" class="form-label"
-                        >Hour</label
-                      >
-                      <select class="form-select" id="modalWakeUpHours">
-                        <option value="">Select Hour</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="modalWakeUpMinutes" class="form-label"
-                        >Minute</label
-                      >
-                      <select class="form-select" id="modalWakeUpMinutes">
-                        <option value="">Select Minute</option>
-                        <option value="00">00</option>
-                        <option value="15">15</option>
-                        <option value="30">30</option>
-                        <option value="45">45</option>
-                      </select>
-                    </div>
-                    <div class="mb-3">
-                      <label for="modalWakeUpPeriod" class="form-label"
-                        >AM/PM</label
-                      >
-                      <select class="form-select" id="modalWakeUpPeriod">
-                        <option value="AM">AM</option>
-                        <option value="PM">PM</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                    id="calculateWakeUpFromModal"
-                  >
-                    Calculate Bedtime
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sleep Tips -->
+          <!-- Sleep Tips  -->
           <div class="card shadow-lg mb-5 animate-on-scroll">
             <div class="card-body p-4">
-              <h3 class="text-center mb-4">Tips for Better Sleep</h3>
+              <h2 class="text-center mb-4 h3">Tips for Better Sleep</h2>
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="d-flex align-items-start">
                     <i class="fas fa-bed fa-2x text-primary me-3"></i>
                     <div>
-                      <h4>Create a Sleep Routine</h4>
+                      <h3 class="h5">Create a Sleep Routine</h3>
                       <p>
                         Go to bed and wake up at the same time every day, even
                         on weekends.
@@ -978,7 +1112,7 @@
                   <div class="d-flex align-items-start">
                     <i class="fas fa-mobile-alt fa-2x text-primary me-3"></i>
                     <div>
-                      <h4>Limit Screen Time</h4>
+                      <h3 class="h5">Limit Screen Time</h3>
                       <p>
                         Avoid screens at least 1 hour before bedtime to improve
                         sleep quality.
@@ -990,7 +1124,7 @@
                   <div class="d-flex align-items-start">
                     <i class="fas fa-coffee fa-2x text-primary me-3"></i>
                     <div>
-                      <h4>Watch Your Caffeine</h4>
+                      <h3 class="h5">Watch Your Caffeine</h3>
                       <p>
                         Avoid caffeine after 2 PM to prevent sleep disruption.
                       </p>
@@ -1001,7 +1135,7 @@
                   <div class="d-flex align-items-start">
                     <i class="fas fa-wind fa-2x text-primary me-3"></i>
                     <div>
-                      <h4>Optimize Your Environment</h4>
+                      <h3 class="h5">Optimize Your Environment</h3>
                       <p>
                         Keep your bedroom cool, dark, and quiet for better
                         sleep.
@@ -1016,6 +1150,100 @@
       </div>
     </div>
 
+    <!-- Wake Up Time Modal -->
+    <div
+      class="modal fade"
+      id="wakeUpTimeModal"
+      tabindex="-1"
+      aria-labelledby="wakeUpTimeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="wakeUpTimeModalLabel">
+              Set Your Wake Up Time
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="wakeUpTimeForm">
+              <div class="mb-3">
+                <label for="modalWakeUpHours" class="form-label">Hour</label>
+                <select
+                  class="form-select"
+                  id="modalWakeUpHours"
+                  aria-label="Wake up hour"
+                >
+                  <option value="">Select Hour</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="modalWakeUpMinutes" class="form-label"
+                  >Minute</label
+                >
+                <select
+                  class="form-select"
+                  id="modalWakeUpMinutes"
+                  aria-label="Wake up minutes"
+                >
+                  <option value="">Select Minute</option>
+                  <option>00</option>
+                  <option>15</option>
+                  <option>30</option>
+                  <option>45</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="modalWakeUpPeriod" class="form-label">AM/PM</label>
+                <select
+                  class="form-select"
+                  id="modalWakeUpPeriod"
+                  aria-label="AM or PM"
+                >
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="calculateWakeUpFromModal"
+            >
+              Calculate Bedtime
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
       <div class="container">
@@ -1023,11 +1251,8 @@
           <div class="col-12 text-center">
             <p>
               <i class="fas fa-moon"></i>
-              &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Somnath | Designed for Better Sleep
+              &copy; <span id="currentYear"></span> Somnath | Designed for
+              Better Sleep
             </p>
             <div class="footer-links">
               <a href="/privacy-policy.html">Privacy Policy</a> |
@@ -1038,18 +1263,21 @@
                 href="https://www.linkedin.com/in/somnath-bhattarai/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 ><i class="fab fa-linkedin"></i
               ></a>
               <a
                 href="https://x.com/sumbhat2"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="X / Twitter"
                 ><i class="fab fa-twitter"></i
               ></a>
               <a
                 href="https://www.instagram.com/suman_271_/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
                 ><i class="fab fa-instagram"></i
               ></a>
             </div>
@@ -1066,33 +1294,30 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
 
-    <!-- Animation Script -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const elements = document.querySelectorAll(".animate-on-scroll");
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 
+      document.addEventListener("DOMContentLoaded", function () {
         const observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-              }
+              if (entry.isIntersecting) entry.target.classList.add("visible");
             });
           },
           { threshold: 0.1 },
         );
-
-        elements.forEach((element) => observer.observe(element));
+        document
+          .querySelectorAll(".animate-on-scroll")
+          .forEach((el) => observer.observe(el));
       });
     </script>
 
-    <!-- Calculator Script -->
     <script defer src="script.js"></script>
   </body>
 </html>
