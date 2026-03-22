@@ -4,7 +4,7 @@
   <!-- Root pages -->
   <url>
     <loc>https://www.remnix.me/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>1.0</priority> 
   </url>
   <url>
@@ -21,32 +21,32 @@
   <!-- Blog pages -->
   <url>
     <loc>https://www.remnix.me/blog/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.remnix.me/blog/science-of-sleep.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.remnix.me/blog/sleep-disorders.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/blog/sleep-hygiene.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/blog/gen-z-sleep-crisis.html</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.8</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/blog/ai-sleep-health-2026.html</loc>
-    <lastmod>2026-01-03</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.8</priority> 
   </url>
   <url>
@@ -72,27 +72,27 @@
   <!-- Learn About Sleep pages -->
   <url>
     <loc>https://www.remnix.me/learn-about-sleep/</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.remnix.me/learn-about-sleep/sleep-cycles.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/learn-about-sleep/sleep-disorders.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority> 
   </url>
   <url>
     <loc>https://www.remnix.me/learn-about-sleep/sleep-hygiene-new.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.remnix.me/learn-about-sleep/sleep-hygiene.html</loc>
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority> 
   </url>
 
