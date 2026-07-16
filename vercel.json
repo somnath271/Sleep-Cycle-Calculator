@@ -68,6 +68,11 @@
       "source": "/learn-about-sleep/sleep-hygiene-new.html",
       "destination": "/learn-about-sleep/sleep-hygiene.html",
       "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://remnix-sleep-calculator.vercel.app/:path*",
+      "permanent": true
     }
   ],
   "rewrites": [
