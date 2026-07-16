@@ -74,5 +74,11 @@
       "destination": "https://remnix-sleep-calculator.vercel.app/:path*",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
   ]
 }
