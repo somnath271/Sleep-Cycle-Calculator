@@ -70,7 +70,7 @@
       "permanent": true
     },
     {
-      "source": "/",
+      "source": "/:path*",
       "destination": "https://remnix-sleep-calculator.vercel.app/:path*",
       "permanent": true
     }
